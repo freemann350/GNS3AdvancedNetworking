@@ -13,5 +13,6 @@ GNS3 scenario project with the following Networking technologies:
 This repo is mostly used for backups due to GNS3 fidgetiness, but can be tried and tested by anyone.
 
 The required files can be found on this [Drive Share](https://drive.google.com/drive/folders/1aVYDkGjsylTrrPmm9Ge2ACSttrJACF8t?usp=drive_link).
+**!! WARNING !! Running all devices is hardware demanding, be at your own risk**
 
 EI@IPL

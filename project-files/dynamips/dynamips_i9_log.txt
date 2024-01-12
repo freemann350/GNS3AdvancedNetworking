@@ -1,0 +1,23 @@
+Jan 12 17:56:14.304 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 12 17:56:14.304 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 39207.
+Jan 12 17:56:14.311 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 12 17:56:14.311 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips 
+Jan 12 17:56:14.311 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips
+Jan 12 17:56:14.312 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/4d53b3a5-4d8c-4c52-b3cf-5978911509b9 
+Jan 12 17:56:14.312 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/4d53b3a5-4d8c-4c52-b3cf-5978911509b9
+Jan 12 17:56:14.312 HYPERVISOR: exec_cmd: vm create R-SEDE-A 13 c3725 
+Jan 12 17:56:14.312 VM: VM R-SEDE-A created.
+Jan 12 17:56:14.312 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-SEDE-A 5022 
+Jan 12 17:56:14.312 HYPERVISOR: exec_cmd: c3725 get_mac_addr R-SEDE-A 
+Jan 12 17:56:14.312 HYPERVISOR: exec_cmd: vm set_disk0 R-SEDE-A 0 
+Jan 12 17:56:14.313 HYPERVISOR: exec_cmd: vm get_status R-SEDE-A 
+Jan 12 17:56:14.313 HYPERVISOR: exec_cmd: vm set_idle_pc R-SEDE-A 0x60bf8ba0 
+Jan 12 17:56:14.313 HYPERVISOR: exec_cmd: vm set_ios R-SEDE-A /home/alex/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jan 12 17:56:14.313 HYPERVISOR: exec_cmd: c3725 set_mac_addr R-SEDE-A c20d.1974.0000 
+Jan 12 17:56:14.314 HYPERVISOR: exec_cmd: vm set_nvram R-SEDE-A 256 
+Jan 12 17:56:18.372 HYPERVISOR: exec_cmd: nio create_udp udp-f2cb4b25-8ff8-43d8-ad45-bf7676cba168 10058 127.0.0.1 10059 
+Jan 12 17:56:18.583 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-SEDE-A 0 1 udp-f2cb4b25-8ff8-43d8-ad45-bf7676cba168 
+Jan 12 17:56:18.584 HYPERVISOR: exec_cmd: vm get_status R-SEDE-A 
+Jan 12 17:56:23.134 HYPERVISOR: exec_cmd: nio create_udp udp-cfd327c1-3e7a-4654-8b72-06ea8aee61d0 10152 127.0.0.1 10153 
+Jan 12 17:56:23.136 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-SEDE-A 0 0 udp-cfd327c1-3e7a-4654-8b72-06ea8aee61d0 
+Jan 12 17:56:23.136 HYPERVISOR: exec_cmd: vm get_status R-SEDE-A 

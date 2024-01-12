@@ -1,0 +1,28 @@
+Jan 12 17:56:14.374 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 12 17:56:14.374 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58435.
+Jan 12 17:56:14.381 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 12 17:56:14.382 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips 
+Jan 12 17:56:14.382 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips
+Jan 12 17:56:14.382 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/4bbf775c-cabb-472a-8df6-3acb8a195299 
+Jan 12 17:56:14.382 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/4bbf775c-cabb-472a-8df6-3acb8a195299
+Jan 12 17:56:14.382 HYPERVISOR: exec_cmd: vm create R-3001-A 15 c3725 
+Jan 12 17:56:14.382 VM: VM R-3001-A created.
+Jan 12 17:56:14.382 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-3001-A 5024 
+Jan 12 17:56:14.382 HYPERVISOR: exec_cmd: c3725 get_mac_addr R-3001-A 
+Jan 12 17:56:14.382 HYPERVISOR: exec_cmd: vm set_disk0 R-3001-A 0 
+Jan 12 17:56:14.383 HYPERVISOR: exec_cmd: vm get_status R-3001-A 
+Jan 12 17:56:14.383 HYPERVISOR: exec_cmd: vm set_idle_pc R-3001-A 0x60bf8ba0 
+Jan 12 17:56:14.383 HYPERVISOR: exec_cmd: vm set_ios R-3001-A /home/alex/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jan 12 17:56:14.383 HYPERVISOR: exec_cmd: c3725 set_mac_addr R-3001-A c20f.1a07.0000 
+Jan 12 17:56:14.384 HYPERVISOR: exec_cmd: vm set_nvram R-3001-A 256 
+Jan 12 17:56:14.384 HYPERVISOR: exec_cmd: vm get_status R-3001-A 
+Jan 12 17:56:14.384 HYPERVISOR: exec_cmd: vm slot_add_binding R-3001-A 1 0 NM-1FE-TX 
+Jan 12 17:56:16.585 HYPERVISOR: exec_cmd: nio create_udp udp-962411e5-60b5-403d-b3c8-1b0c197db581 10026 127.0.0.1 10027 
+Jan 12 17:56:16.793 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-3001-A 0 0 udp-962411e5-60b5-403d-b3c8-1b0c197db581 
+Jan 12 17:56:16.793 HYPERVISOR: exec_cmd: vm get_status R-3001-A 
+Jan 12 17:56:24.278 HYPERVISOR: exec_cmd: nio create_udp udp-a6037058-c5c3-4fcf-856b-fe35c8143ccf 10182 127.0.0.1 10183 
+Jan 12 17:56:24.281 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-3001-A 0 1 udp-a6037058-c5c3-4fcf-856b-fe35c8143ccf 
+Jan 12 17:56:24.281 HYPERVISOR: exec_cmd: vm get_status R-3001-A 
+Jan 12 17:56:25.603 HYPERVISOR: exec_cmd: nio create_udp udp-5ca99b56-f85f-465e-97d1-c0a4a2c1849b 10210 127.0.0.1 10211 
+Jan 12 17:56:25.605 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-3001-A 1 0 udp-5ca99b56-f85f-465e-97d1-c0a4a2c1849b 
+Jan 12 17:56:25.606 HYPERVISOR: exec_cmd: vm get_status R-3001-A 

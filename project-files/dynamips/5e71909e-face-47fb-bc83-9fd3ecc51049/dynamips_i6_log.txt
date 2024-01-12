@@ -1,0 +1,42 @@
+Dec 05 16:09:41.640 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 05 16:09:41.640 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48893.
+Dec 05 16:09:41.646 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 05 16:09:41.646 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips 
+Dec 05 16:09:41.647 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips
+Dec 05 16:09:41.647 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/d84c114b-1817-4a2b-a53e-4f9eb6e18756 
+Dec 05 16:09:41.647 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/d84c114b-1817-4a2b-a53e-4f9eb6e18756
+Dec 05 16:09:41.647 HYPERVISOR: exec_cmd: vm create R9 9 c3725 
+Dec 05 16:09:41.647 VM: VM R9 created.
+Dec 05 16:09:41.647 HYPERVISOR: exec_cmd: vm set_con_tcp_port R9 5019 
+Dec 05 16:09:41.647 HYPERVISOR: exec_cmd: c3725 get_mac_addr R9 
+Dec 05 16:09:41.648 HYPERVISOR: exec_cmd: vm set_disk0 R9 0 
+Dec 05 16:09:41.648 HYPERVISOR: exec_cmd: vm get_status R9 
+Dec 05 16:09:41.648 HYPERVISOR: exec_cmd: vm set_idle_pc R9 0x60bf8ba0 
+Dec 05 16:09:41.649 HYPERVISOR: exec_cmd: vm set_ios R9 /home/alex/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Dec 05 16:09:41.649 HYPERVISOR: exec_cmd: c3725 set_mac_addr R9 c209.1815.0000 
+Dec 05 16:09:41.649 HYPERVISOR: exec_cmd: vm set_nvram R9 256 
+Dec 05 16:09:41.650 HYPERVISOR: exec_cmd: vm get_status R9 
+Dec 05 16:09:41.650 HYPERVISOR: exec_cmd: vm slot_add_binding R9 1 0 NM-1FE-TX 
+Dec 05 16:09:43.180 HYPERVISOR: exec_cmd: nio create_udp udp-8c7df3d3-684a-4895-b302-7566557c8b64 10006 127.0.0.1 10007 
+Dec 05 16:09:43.394 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 1 0 udp-8c7df3d3-684a-4895-b302-7566557c8b64 
+Dec 05 16:09:43.395 HYPERVISOR: exec_cmd: vm get_status R9 
+Dec 05 16:09:43.864 HYPERVISOR: exec_cmd: nio create_udp udp-91441601-135d-4656-91dc-98c92a58fc36 10014 127.0.0.1 10015 
+Dec 05 16:09:43.866 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 0 0 udp-91441601-135d-4656-91dc-98c92a58fc36 
+Dec 05 16:09:43.867 HYPERVISOR: exec_cmd: vm get_status R9 
+Dec 05 16:09:44.077 HYPERVISOR: exec_cmd: nio create_udp udp-530f6e05-beb1-4688-bf18-22f6e020f353 10018 127.0.0.1 10019 
+Dec 05 16:09:44.079 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 0 1 udp-530f6e05-beb1-4688-bf18-22f6e020f353 
+Dec 05 16:09:44.079 HYPERVISOR: exec_cmd: vm get_status R9 
+Dec 05 16:39:23.173 HYPERVISOR: exec_cmd: vm set_ios R9 /home/alex/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Dec 05 16:39:23.174 HYPERVISOR: exec_cmd: vm rename R9 R-2001-A 
+Dec 05 16:39:23.348 HYPERVISOR: exec_cmd: vm set_ios R-2001-A /home/alex/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Dec 05 16:39:27.547 HYPERVISOR: exec_cmd: vm set_ios R-2001-A /home/alex/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Dec 05 16:40:48.648 HYPERVISOR: exec_cmd: vm set_ios R-2001-A /home/alex/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Dec 05 19:40:24.759 HYPERVISOR: exec_cmd: vm get_status R-2001-A 
+Dec 05 19:40:24.759 HYPERVISOR: exec_cmd: vm extract_config R-2001-A 
+Dec 05 19:40:25.137 HYPERVISOR: exec_cmd: vm get_status R-2001-A 
+Dec 05 19:40:25.137 HYPERVISOR: exec_cmd: vm extract_config R-2001-A 
+Dec 05 19:40:25.137 HYPERVISOR: exec_cmd: vm delete R-2001-A 
+Dec 05 19:40:25.137 VM: VM R-2001-A destroyed.
+Dec 05 19:40:25.138 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 19:40:25.400 HYPERVISOR: Stopped.
+Dec 05 19:40:25.400 GENERAL: reset done.

@@ -1,0 +1,32 @@
+Dec 12 17:03:47.944 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 12 17:03:47.944 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 38251.
+Dec 12 17:03:47.952 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 12 17:03:47.953 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips 
+Dec 12 17:03:47.953 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips
+Dec 12 17:03:47.953 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/54493e7f-47db-4d7f-93b4-d08d06e2d823 
+Dec 12 17:03:47.953 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/54493e7f-47db-4d7f-93b4-d08d06e2d823
+Dec 12 17:03:47.953 HYPERVISOR: exec_cmd: vm create R-FILIAL-A 19 c3725 
+Dec 12 17:03:47.953 VM: VM R-FILIAL-A created.
+Dec 12 17:03:47.953 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-FILIAL-A 5029 
+Dec 12 17:03:47.954 HYPERVISOR: exec_cmd: c3725 get_mac_addr R-FILIAL-A 
+Dec 12 17:03:47.954 HYPERVISOR: exec_cmd: vm set_disk0 R-FILIAL-A 0 
+Dec 12 17:03:47.954 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 
+Dec 12 17:03:47.954 HYPERVISOR: exec_cmd: vm set_idle_pc R-FILIAL-A 0x60bf8ba0 
+Dec 12 17:03:47.955 HYPERVISOR: exec_cmd: vm set_ios R-FILIAL-A /home/alex/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Dec 12 17:03:47.956 HYPERVISOR: exec_cmd: c3725 set_mac_addr R-FILIAL-A c213.1b88.0000 
+Dec 12 17:03:47.956 HYPERVISOR: exec_cmd: vm set_nvram R-FILIAL-A 256 
+Dec 12 17:03:48.584 HYPERVISOR: exec_cmd: nio create_udp udp-0cf94ebd-20a9-4c86-98c2-78e19a569aba 10038 127.0.0.1 10039 
+Dec 12 17:03:48.793 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-FILIAL-A 0 0 udp-0cf94ebd-20a9-4c86-98c2-78e19a569aba 
+Dec 12 17:03:48.794 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 
+Dec 12 17:03:49.262 HYPERVISOR: exec_cmd: nio create_udp udp-419b19ef-0375-4919-a1f1-77bf3e04f290 10044 127.0.0.1 10045 
+Dec 12 17:03:49.263 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-FILIAL-A 0 1 udp-419b19ef-0375-4919-a1f1-77bf3e04f290 
+Dec 12 17:03:49.264 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 
+Dec 12 17:48:55.367 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 
+Dec 12 17:48:55.368 HYPERVISOR: exec_cmd: vm extract_config R-FILIAL-A 
+Dec 12 17:48:55.556 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 
+Dec 12 17:48:55.556 HYPERVISOR: exec_cmd: vm extract_config R-FILIAL-A 
+Dec 12 17:48:55.556 HYPERVISOR: exec_cmd: vm delete R-FILIAL-A 
+Dec 12 17:48:55.556 VM: VM R-FILIAL-A destroyed.
+Dec 12 17:48:55.557 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 12 17:48:55.779 HYPERVISOR: Stopped.
+Dec 12 17:48:55.779 GENERAL: reset done.

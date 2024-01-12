@@ -1,0 +1,33 @@
+Jan 12 17:56:14.075 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 12 17:56:14.075 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54603.
+Jan 12 17:56:14.079 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 12 17:56:14.080 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips 
+Jan 12 17:56:14.080 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips
+Jan 12 17:56:14.080 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/b18b58ec-234b-42a7-90f1-25f1d6c43aca 
+Jan 12 17:56:14.080 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/b18b58ec-234b-42a7-90f1-25f1d6c43aca
+Jan 12 17:56:14.080 HYPERVISOR: exec_cmd: vm create R-1000-H 3 c3725 
+Jan 12 17:56:14.080 VM: VM R-1000-H created.
+Jan 12 17:56:14.080 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-1000-H 5014 
+Jan 12 17:56:14.080 HYPERVISOR: exec_cmd: c3725 get_mac_addr R-1000-H 
+Jan 12 17:56:14.081 HYPERVISOR: exec_cmd: vm set_disk0 R-1000-H 0 
+Jan 12 17:56:14.081 HYPERVISOR: exec_cmd: vm get_status R-1000-H 
+Jan 12 17:56:14.081 HYPERVISOR: exec_cmd: vm set_idle_pc R-1000-H 0x60bf8ba0 
+Jan 12 17:56:14.081 HYPERVISOR: exec_cmd: vm set_ios R-1000-H /home/alex/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jan 12 17:56:14.082 HYPERVISOR: exec_cmd: c3725 set_mac_addr R-1000-H c203.1051.0000 
+Jan 12 17:56:14.082 HYPERVISOR: exec_cmd: vm set_nvram R-1000-H 256 
+Jan 12 17:56:14.082 HYPERVISOR: exec_cmd: vm get_status R-1000-H 
+Jan 12 17:56:14.082 HYPERVISOR: exec_cmd: vm slot_add_binding R-1000-H 1 0 NM-1FE-TX 
+Jan 12 17:56:14.083 HYPERVISOR: exec_cmd: vm get_status R-1000-H 
+Jan 12 17:56:14.083 HYPERVISOR: exec_cmd: vm slot_add_binding R-1000-H 2 0 NM-1FE-TX 
+Jan 12 17:56:21.898 HYPERVISOR: exec_cmd: nio create_udp udp-44d340a3-649c-438d-b6f1-cd95bd057876 10118 127.0.0.1 10119 
+Jan 12 17:56:22.110 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1000-H 1 0 udp-44d340a3-649c-438d-b6f1-cd95bd057876 
+Jan 12 17:56:22.111 HYPERVISOR: exec_cmd: vm get_status R-1000-H 
+Jan 12 17:56:22.789 HYPERVISOR: exec_cmd: nio create_udp udp-38002934-4cd5-46c0-8c30-08b45b74abda 10140 127.0.0.1 10141 
+Jan 12 17:56:22.790 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1000-H 2 0 udp-38002934-4cd5-46c0-8c30-08b45b74abda 
+Jan 12 17:56:22.791 HYPERVISOR: exec_cmd: vm get_status R-1000-H 
+Jan 12 17:56:22.957 HYPERVISOR: exec_cmd: nio create_udp udp-fcf98e99-8e65-4978-a1a1-701d4b8fed47 10146 127.0.0.1 10147 
+Jan 12 17:56:22.958 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1000-H 0 1 udp-fcf98e99-8e65-4978-a1a1-701d4b8fed47 
+Jan 12 17:56:22.958 HYPERVISOR: exec_cmd: vm get_status R-1000-H 
+Jan 12 17:56:25.052 HYPERVISOR: exec_cmd: nio create_udp udp-eb4eabf5-4e6d-4048-921e-ae257ede9127 10194 127.0.0.1 10195 
+Jan 12 17:56:25.053 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1000-H 0 0 udp-eb4eabf5-4e6d-4048-921e-ae257ede9127 
+Jan 12 17:56:25.054 HYPERVISOR: exec_cmd: vm get_status R-1000-H 

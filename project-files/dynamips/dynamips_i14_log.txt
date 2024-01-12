@@ -1,0 +1,12 @@
+Jan 12 17:56:14.478 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 12 17:56:14.478 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59837.
+Jan 12 17:56:14.485 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 12 17:56:14.486 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips 
+Jan 12 17:56:14.486 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips
+Jan 12 17:56:14.486 HYPERVISOR: exec_cmd: ethsw create Sw-Filial 
+Jan 12 17:56:15.287 HYPERVISOR: exec_cmd: nio create_udp udp-08c2bd5a-949e-4643-ad1c-397b260a912e 10001 127.0.0.1 10000 
+Jan 12 17:56:15.287 HYPERVISOR: exec_cmd: ethsw add_nio Sw-Filial udp-08c2bd5a-949e-4643-ad1c-397b260a912e 
+Jan 12 17:56:15.299 HYPERVISOR: exec_cmd: ethsw set_access_port Sw-Filial udp-08c2bd5a-949e-4643-ad1c-397b260a912e 1 
+Jan 12 17:56:25.958 HYPERVISOR: exec_cmd: nio create_udp udp-22023d30-0270-488d-bed7-b60df9bc1867 10221 127.0.0.1 10220 
+Jan 12 17:56:25.959 HYPERVISOR: exec_cmd: ethsw add_nio Sw-Filial udp-22023d30-0270-488d-bed7-b60df9bc1867 
+Jan 12 17:56:25.959 HYPERVISOR: exec_cmd: ethsw set_access_port Sw-Filial udp-22023d30-0270-488d-bed7-b60df9bc1867 1 

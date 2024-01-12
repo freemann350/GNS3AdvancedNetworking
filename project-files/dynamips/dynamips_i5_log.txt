@@ -1,0 +1,23 @@
+Jan 12 17:56:14.146 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 12 17:56:14.146 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41773.
+Jan 12 17:56:14.153 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 12 17:56:14.153 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips 
+Jan 12 17:56:14.153 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips
+Jan 12 17:56:14.153 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/2b550d45-2dd8-4f7d-88a9-52c77397e031 
+Jan 12 17:56:14.153 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/2b550d45-2dd8-4f7d-88a9-52c77397e031
+Jan 12 17:56:14.153 HYPERVISOR: exec_cmd: vm create R-1000-A 8 c3725 
+Jan 12 17:56:14.154 VM: VM R-1000-A created.
+Jan 12 17:56:14.154 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-1000-A 5018 
+Jan 12 17:56:14.154 HYPERVISOR: exec_cmd: c3725 get_mac_addr R-1000-A 
+Jan 12 17:56:14.154 HYPERVISOR: exec_cmd: vm set_disk0 R-1000-A 0 
+Jan 12 17:56:14.154 HYPERVISOR: exec_cmd: vm get_status R-1000-A 
+Jan 12 17:56:14.154 HYPERVISOR: exec_cmd: vm set_idle_pc R-1000-A 0x60bf8ba0 
+Jan 12 17:56:14.155 HYPERVISOR: exec_cmd: vm set_ios R-1000-A /home/alex/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jan 12 17:56:14.155 HYPERVISOR: exec_cmd: c3725 set_mac_addr R-1000-A c208.14ef.0000 
+Jan 12 17:56:14.155 HYPERVISOR: exec_cmd: vm set_nvram R-1000-A 256 
+Jan 12 17:56:21.164 HYPERVISOR: exec_cmd: nio create_udp udp-29da2175-bcf2-404e-a468-e74a14b705de 10106 127.0.0.1 10107 
+Jan 12 17:56:21.373 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1000-A 0 0 udp-29da2175-bcf2-404e-a468-e74a14b705de 
+Jan 12 17:56:21.373 HYPERVISOR: exec_cmd: vm get_status R-1000-A 
+Jan 12 17:56:21.520 HYPERVISOR: exec_cmd: nio create_udp udp-ca79d541-838c-4faf-845f-8a63bdc7e93a 10110 127.0.0.1 10111 
+Jan 12 17:56:21.521 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1000-A 0 1 udp-ca79d541-838c-4faf-845f-8a63bdc7e93a 
+Jan 12 17:56:21.522 HYPERVISOR: exec_cmd: vm get_status R-1000-A 

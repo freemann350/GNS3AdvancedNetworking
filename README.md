@@ -1,5 +1,7 @@
 # Context
 
+![Overall Scenario](https://github.com/freemann350/GNS3AdvancedNetworking/assets/25934321/d9c38a19-da99-434b-aac0-d0b016a71d63)
+
 GNS3 scenario project with the following Networking technologies:
 
 - IPv4/IPv6

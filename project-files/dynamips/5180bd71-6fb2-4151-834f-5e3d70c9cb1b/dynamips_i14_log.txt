@@ -1,0 +1,51 @@
+Jan 13 23:09:54.787 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 13 23:09:54.787 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 40709.
+Jan 13 23:09:54.794 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 13 23:09:54.795 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips 
+Jan 13 23:09:54.795 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips
+Jan 13 23:09:54.795 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips/a112eb60-5ad6-495a-b526-e566d8559c32 
+Jan 13 23:09:54.795 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips/a112eb60-5ad6-495a-b526-e566d8559c32
+Jan 13 23:09:54.796 HYPERVISOR: exec_cmd: vm create R-1000-G 24 c7200 
+Jan 13 23:09:54.796 VM: VM R-1000-G created.
+Jan 13 23:09:54.796 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-1000-G 5017 
+Jan 13 23:09:54.796 HYPERVISOR: exec_cmd: c7200 get_mac_addr R-1000-G 
+Jan 13 23:09:54.796 HYPERVISOR: exec_cmd: vm get_status R-1000-G 
+Jan 13 23:09:54.797 HYPERVISOR: exec_cmd: vm slot_add_binding R-1000-G 0 0 C7200-IO-FE 
+Jan 13 23:09:54.797 HYPERVISOR: exec_cmd: vm set_disk0 R-1000-G 0 
+Jan 13 23:09:54.797 HYPERVISOR: exec_cmd: vm get_status R-1000-G 
+Jan 13 23:09:54.797 HYPERVISOR: exec_cmd: vm set_idle_pc R-1000-G 0x60189224 
+Jan 13 23:09:54.797 HYPERVISOR: exec_cmd: vm set_ios R-1000-G /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 13 23:09:54.798 HYPERVISOR: exec_cmd: c7200 set_mac_addr R-1000-G ca18.1730.0000 
+Jan 13 23:09:54.798 HYPERVISOR: exec_cmd: vm set_nvram R-1000-G 512 
+Jan 13 23:09:54.798 HYPERVISOR: exec_cmd: vm set_ram R-1000-G 512 
+Jan 13 23:09:54.798 HYPERVISOR: exec_cmd: vm get_status R-1000-G 
+Jan 13 23:09:54.798 HYPERVISOR: exec_cmd: vm slot_remove_binding R-1000-G 0 0 
+Jan 13 23:09:54.799 HYPERVISOR: exec_cmd: vm get_status R-1000-G 
+Jan 13 23:09:54.799 HYPERVISOR: exec_cmd: vm slot_add_binding R-1000-G 0 0 C7200-IO-2FE 
+Jan 13 23:09:54.799 HYPERVISOR: exec_cmd: vm get_status R-1000-G 
+Jan 13 23:09:54.799 HYPERVISOR: exec_cmd: vm slot_add_binding R-1000-G 1 0 PA-FE-TX 
+Jan 13 23:09:54.799 HYPERVISOR: exec_cmd: vm get_status R-1000-G 
+Jan 13 23:09:54.799 HYPERVISOR: exec_cmd: vm slot_add_binding R-1000-G 2 0 PA-FE-TX 
+Jan 13 23:09:59.916 HYPERVISOR: exec_cmd: nio create_udp udp-1d47ae68-8c49-489c-aa7e-d4ef3b337fa1 10076 127.0.0.1 10077 
+Jan 13 23:10:00.126 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1000-G 1 0 udp-1d47ae68-8c49-489c-aa7e-d4ef3b337fa1 
+Jan 13 23:10:00.127 HYPERVISOR: exec_cmd: vm get_status R-1000-G 
+Jan 13 23:10:01.198 HYPERVISOR: exec_cmd: nio create_udp udp-36427244-5989-4c3b-9d95-69ab5fa02438 10108 127.0.0.1 10109 
+Jan 13 23:10:01.199 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1000-G 0 0 udp-36427244-5989-4c3b-9d95-69ab5fa02438 
+Jan 13 23:10:01.199 HYPERVISOR: exec_cmd: vm get_status R-1000-G 
+Jan 13 23:10:01.360 HYPERVISOR: exec_cmd: nio create_udp udp-b65243f4-7086-4636-8cb8-8ac0583cb84a 10114 127.0.0.1 10115 
+Jan 13 23:10:01.361 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1000-G 2 0 udp-b65243f4-7086-4636-8cb8-8ac0583cb84a 
+Jan 13 23:10:01.362 HYPERVISOR: exec_cmd: vm get_status R-1000-G 
+Jan 13 23:10:01.510 HYPERVISOR: exec_cmd: nio create_udp udp-74685479-dfde-4314-b53e-be5d1f6b4e04 10118 127.0.0.1 10119 
+Jan 13 23:10:01.511 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1000-G 0 1 udp-74685479-dfde-4314-b53e-be5d1f6b4e04 
+Jan 13 23:10:01.511 HYPERVISOR: exec_cmd: vm get_status R-1000-G 
+Jan 13 23:28:35.978 HYPERVISOR: exec_cmd: vm get_status R-1000-G 
+Jan 13 23:28:35.980 HYPERVISOR: exec_cmd: vm extract_config R-1000-G 
+Jan 13 23:28:44.784 HYPERVISOR: exec_cmd: vm get_status R-1000-G 
+Jan 13 23:28:44.785 HYPERVISOR: exec_cmd: vm extract_config R-1000-G 
+Jan 13 23:28:44.987 HYPERVISOR: exec_cmd: vm get_status R-1000-G 
+Jan 13 23:28:44.987 HYPERVISOR: exec_cmd: vm extract_config R-1000-G 
+Jan 13 23:28:44.988 HYPERVISOR: exec_cmd: vm delete R-1000-G 
+Jan 13 23:28:44.988 VM: VM R-1000-G destroyed.
+Jan 13 23:28:44.989 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 13 23:28:45.242 HYPERVISOR: Stopped.
+Jan 13 23:28:45.242 GENERAL: reset done.

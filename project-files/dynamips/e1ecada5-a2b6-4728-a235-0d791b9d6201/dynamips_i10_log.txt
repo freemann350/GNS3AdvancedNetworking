@@ -1,0 +1,49 @@
+Jan 13 23:09:54.503 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 13 23:09:54.503 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 46463.
+Jan 13 23:09:54.510 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 13 23:09:54.511 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips 
+Jan 13 23:09:54.511 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips
+Jan 13 23:09:54.511 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips/86bef5d3-95b6-4fc7-a503-a92421d2e39b 
+Jan 13 23:09:54.511 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips/86bef5d3-95b6-4fc7-a503-a92421d2e39b
+Jan 13 23:09:54.511 HYPERVISOR: exec_cmd: vm create R-2002-C 17 c7200 
+Jan 13 23:09:54.511 VM: VM R-2002-C created.
+Jan 13 23:09:54.511 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-2002-C 5001 
+Jan 13 23:09:54.511 HYPERVISOR: exec_cmd: c7200 get_mac_addr R-2002-C 
+Jan 13 23:09:54.511 HYPERVISOR: exec_cmd: vm get_status R-2002-C 
+Jan 13 23:09:54.511 HYPERVISOR: exec_cmd: vm slot_add_binding R-2002-C 0 0 C7200-IO-FE 
+Jan 13 23:09:54.512 HYPERVISOR: exec_cmd: vm set_disk0 R-2002-C 0 
+Jan 13 23:09:54.512 HYPERVISOR: exec_cmd: vm get_status R-2002-C 
+Jan 13 23:09:54.512 HYPERVISOR: exec_cmd: vm set_idle_pc R-2002-C 0x60189224 
+Jan 13 23:09:54.513 HYPERVISOR: exec_cmd: vm set_ios R-2002-C /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 13 23:09:54.513 HYPERVISOR: exec_cmd: c7200 set_mac_addr R-2002-C ca11.9ee9.0000 
+Jan 13 23:09:54.513 HYPERVISOR: exec_cmd: vm set_nvram R-2002-C 512 
+Jan 13 23:09:54.513 HYPERVISOR: exec_cmd: vm set_ram R-2002-C 512 
+Jan 13 23:09:54.513 HYPERVISOR: exec_cmd: vm get_status R-2002-C 
+Jan 13 23:09:54.513 HYPERVISOR: exec_cmd: vm slot_remove_binding R-2002-C 0 0 
+Jan 13 23:09:54.514 HYPERVISOR: exec_cmd: vm get_status R-2002-C 
+Jan 13 23:09:54.514 HYPERVISOR: exec_cmd: vm slot_add_binding R-2002-C 0 0 C7200-IO-2FE 
+Jan 13 23:09:54.514 HYPERVISOR: exec_cmd: vm get_status R-2002-C 
+Jan 13 23:09:54.514 HYPERVISOR: exec_cmd: vm slot_add_binding R-2002-C 1 0 PA-2FE-TX 
+Jan 13 23:09:57.698 HYPERVISOR: exec_cmd: nio create_udp udp-ef0a5d1c-f3a1-47b4-baab-b1bfcbf48e93 10044 127.0.0.1 10045 
+Jan 13 23:09:57.909 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-2002-C 0 1 udp-ef0a5d1c-f3a1-47b4-baab-b1bfcbf48e93 
+Jan 13 23:09:57.909 HYPERVISOR: exec_cmd: vm get_status R-2002-C 
+Jan 13 23:10:00.482 HYPERVISOR: exec_cmd: nio create_udp udp-e1752735-9c21-4643-9b49-997d6ce3186e 10090 127.0.0.1 10091 
+Jan 13 23:10:00.485 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-2002-C 0 0 udp-e1752735-9c21-4643-9b49-997d6ce3186e 
+Jan 13 23:10:00.486 HYPERVISOR: exec_cmd: vm get_status R-2002-C 
+Jan 13 23:10:05.010 HYPERVISOR: exec_cmd: nio create_udp udp-9800014a-8866-4f11-b4dc-db8c3f54665c 10190 127.0.0.1 10191 
+Jan 13 23:10:05.011 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-2002-C 1 0 udp-9800014a-8866-4f11-b4dc-db8c3f54665c 
+Jan 13 23:10:05.011 HYPERVISOR: exec_cmd: vm get_status R-2002-C 
+Jan 13 23:10:05.778 HYPERVISOR: exec_cmd: nio create_udp udp-fb24738e-d8c4-4fa2-a503-871aaacb11c5 10204 127.0.0.1 10205 
+Jan 13 23:10:05.779 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-2002-C 1 1 udp-fb24738e-d8c4-4fa2-a503-871aaacb11c5 
+Jan 13 23:10:05.780 HYPERVISOR: exec_cmd: vm get_status R-2002-C 
+Jan 13 23:28:35.938 HYPERVISOR: exec_cmd: vm get_status R-2002-C 
+Jan 13 23:28:35.940 HYPERVISOR: exec_cmd: vm extract_config R-2002-C 
+Jan 13 23:28:44.768 HYPERVISOR: exec_cmd: vm get_status R-2002-C 
+Jan 13 23:28:44.769 HYPERVISOR: exec_cmd: vm extract_config R-2002-C 
+Jan 13 23:28:45.263 HYPERVISOR: exec_cmd: vm get_status R-2002-C 
+Jan 13 23:28:45.263 HYPERVISOR: exec_cmd: vm extract_config R-2002-C 
+Jan 13 23:28:45.264 HYPERVISOR: exec_cmd: vm delete R-2002-C 
+Jan 13 23:28:45.264 VM: VM R-2002-C destroyed.
+Jan 13 23:28:45.264 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 13 23:28:45.467 HYPERVISOR: Stopped.
+Jan 13 23:28:45.468 GENERAL: reset done.

@@ -1,0 +1,47 @@
+Jan 13 23:09:54.427 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 13 23:09:54.427 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 47533.
+Jan 13 23:09:54.434 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 13 23:09:54.434 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips 
+Jan 13 23:09:54.434 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips
+Jan 13 23:09:54.434 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips/8328096e-b9f4-44fc-9aeb-cce8c6c821a6 
+Jan 13 23:09:54.434 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips/8328096e-b9f4-44fc-9aeb-cce8c6c821a6
+Jan 13 23:09:54.434 HYPERVISOR: exec_cmd: vm create R-1000-C 7 c7200 
+Jan 13 23:09:54.434 VM: VM R-1000-C created.
+Jan 13 23:09:54.435 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-1000-C 5011 
+Jan 13 23:09:54.435 HYPERVISOR: exec_cmd: c7200 get_mac_addr R-1000-C 
+Jan 13 23:09:54.435 HYPERVISOR: exec_cmd: vm get_status R-1000-C 
+Jan 13 23:09:54.435 HYPERVISOR: exec_cmd: vm slot_add_binding R-1000-C 0 0 C7200-IO-FE 
+Jan 13 23:09:54.435 HYPERVISOR: exec_cmd: vm set_disk0 R-1000-C 0 
+Jan 13 23:09:54.435 HYPERVISOR: exec_cmd: vm get_status R-1000-C 
+Jan 13 23:09:54.436 HYPERVISOR: exec_cmd: vm set_idle_pc R-1000-C 0x60189224 
+Jan 13 23:09:54.436 HYPERVISOR: exec_cmd: vm set_ios R-1000-C /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 13 23:09:54.436 HYPERVISOR: exec_cmd: c7200 set_mac_addr R-1000-C ca07.1a4e.0000 
+Jan 13 23:09:54.436 HYPERVISOR: exec_cmd: vm set_nvram R-1000-C 512 
+Jan 13 23:09:54.437 HYPERVISOR: exec_cmd: vm set_ram R-1000-C 512 
+Jan 13 23:09:54.437 HYPERVISOR: exec_cmd: vm get_status R-1000-C 
+Jan 13 23:09:54.437 HYPERVISOR: exec_cmd: vm slot_add_binding R-1000-C 1 0 PA-2FE-TX 
+Jan 13 23:09:54.437 HYPERVISOR: exec_cmd: vm get_status R-1000-C 
+Jan 13 23:09:54.437 HYPERVISOR: exec_cmd: vm slot_add_binding R-1000-C 2 0 PA-2FE-TX 
+Jan 13 23:09:56.468 HYPERVISOR: exec_cmd: nio create_udp udp-0580d78b-86f8-4644-ac05-7c3706bf7a8c 10016 127.0.0.1 10017 
+Jan 13 23:09:56.677 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1000-C 1 0 udp-0580d78b-86f8-4644-ac05-7c3706bf7a8c 
+Jan 13 23:09:56.678 HYPERVISOR: exec_cmd: vm get_status R-1000-C 
+Jan 13 23:09:57.197 HYPERVISOR: exec_cmd: nio create_udp udp-e3556a7d-f709-4df7-8f60-015c688cd3d8 10028 127.0.0.1 10029 
+Jan 13 23:09:57.199 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1000-C 0 0 udp-e3556a7d-f709-4df7-8f60-015c688cd3d8 
+Jan 13 23:09:57.199 HYPERVISOR: exec_cmd: vm get_status R-1000-C 
+Jan 13 23:09:57.522 HYPERVISOR: exec_cmd: nio create_udp udp-95d0774f-a36b-4e85-9ed6-ab595e33cf47 10040 127.0.0.1 10041 
+Jan 13 23:09:57.524 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1000-C 1 1 udp-95d0774f-a36b-4e85-9ed6-ab595e33cf47 
+Jan 13 23:09:57.525 HYPERVISOR: exec_cmd: vm get_status R-1000-C 
+Jan 13 23:09:59.176 HYPERVISOR: exec_cmd: nio create_udp udp-0a278aa5-7b32-4098-9408-dc03841d29d9 10066 127.0.0.1 10067 
+Jan 13 23:09:59.177 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1000-C 2 0 udp-0a278aa5-7b32-4098-9408-dc03841d29d9 
+Jan 13 23:09:59.178 HYPERVISOR: exec_cmd: vm get_status R-1000-C 
+Jan 13 23:28:35.924 HYPERVISOR: exec_cmd: vm get_status R-1000-C 
+Jan 13 23:28:35.924 HYPERVISOR: exec_cmd: vm extract_config R-1000-C 
+Jan 13 23:28:44.762 HYPERVISOR: exec_cmd: vm get_status R-1000-C 
+Jan 13 23:28:44.762 HYPERVISOR: exec_cmd: vm extract_config R-1000-C 
+Jan 13 23:28:45.028 HYPERVISOR: exec_cmd: vm get_status R-1000-C 
+Jan 13 23:28:45.029 HYPERVISOR: exec_cmd: vm extract_config R-1000-C 
+Jan 13 23:28:45.029 HYPERVISOR: exec_cmd: vm delete R-1000-C 
+Jan 13 23:28:45.029 VM: VM R-1000-C destroyed.
+Jan 13 23:28:45.029 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 13 23:28:45.398 HYPERVISOR: Stopped.
+Jan 13 23:28:45.399 GENERAL: reset done.

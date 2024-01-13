@@ -1,0 +1,1 @@
+Formatting '/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/qemu/67330c6d-de4f-447f-8cf7-58fbd7404862/hda_disk.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=104857600 backing_file=/home/alex/GNS3/images/QEMU/linux-microcore-3.4.1.img backing_fmt=qcow2 lazy_refcounts=off refcount_bits=16

@@ -1,30 +1,30 @@
-Jan 13 23:59:14.929 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
-Jan 13 23:59:14.929 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59521.
-Jan 13 23:59:14.937 HYPERVISOR: exec_cmd: hypervisor version 
-Jan 13 23:59:14.937 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips 
-Jan 13 23:59:14.937 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips
-Jan 13 23:59:14.937 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips/02b920db-0ebe-4ce5-944a-7b8695796ad0 
-Jan 13 23:59:14.937 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips/02b920db-0ebe-4ce5-944a-7b8695796ad0
-Jan 13 23:59:14.937 HYPERVISOR: exec_cmd: vm create R-2002-A 3 c7200 
-Jan 13 23:59:14.937 VM: VM R-2002-A created.
-Jan 13 23:59:14.938 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-2002-A 5014 
-Jan 13 23:59:14.938 HYPERVISOR: exec_cmd: c7200 get_mac_addr R-2002-A 
-Jan 13 23:59:14.938 HYPERVISOR: exec_cmd: vm get_status R-2002-A 
-Jan 13 23:59:14.938 HYPERVISOR: exec_cmd: vm slot_add_binding R-2002-A 0 0 C7200-IO-FE 
-Jan 13 23:59:14.938 HYPERVISOR: exec_cmd: vm set_disk0 R-2002-A 0 
-Jan 13 23:59:14.938 HYPERVISOR: exec_cmd: vm get_status R-2002-A 
-Jan 13 23:59:14.939 HYPERVISOR: exec_cmd: vm set_idle_pc R-2002-A 0x60189224 
-Jan 13 23:59:14.939 HYPERVISOR: exec_cmd: vm set_ios R-2002-A /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
-Jan 13 23:59:14.939 HYPERVISOR: exec_cmd: c7200 set_mac_addr R-2002-A ca03.2be0.0000 
-Jan 13 23:59:14.939 HYPERVISOR: exec_cmd: vm set_nvram R-2002-A 512 
-Jan 13 23:59:14.940 HYPERVISOR: exec_cmd: vm set_ram R-2002-A 512 
-Jan 13 23:59:14.940 HYPERVISOR: exec_cmd: vm get_status R-2002-A 
-Jan 13 23:59:14.940 HYPERVISOR: exec_cmd: vm slot_remove_binding R-2002-A 0 0 
-Jan 13 23:59:14.940 HYPERVISOR: exec_cmd: vm get_status R-2002-A 
-Jan 13 23:59:14.940 HYPERVISOR: exec_cmd: vm slot_add_binding R-2002-A 0 0 C7200-IO-2FE 
-Jan 13 23:59:23.009 HYPERVISOR: exec_cmd: nio create_udp udp-cf7dc24d-61f9-4bb1-b308-2c61a4c3a598 10156 127.0.0.1 10157 
-Jan 13 23:59:23.219 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-2002-A 0 0 udp-cf7dc24d-61f9-4bb1-b308-2c61a4c3a598 
-Jan 13 23:59:23.219 HYPERVISOR: exec_cmd: vm get_status R-2002-A 
-Jan 13 23:59:23.373 HYPERVISOR: exec_cmd: nio create_udp udp-51faab62-5906-4178-a009-4118c3eb740a 10160 127.0.0.1 10161 
-Jan 13 23:59:23.374 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-2002-A 0 1 udp-51faab62-5906-4178-a009-4118c3eb740a 
-Jan 13 23:59:23.374 HYPERVISOR: exec_cmd: vm get_status R-2002-A 
+Jan 14 00:02:00.307 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 14 00:02:00.307 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54215.
+Jan 14 00:02:00.314 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 14 00:02:00.314 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips 
+Jan 14 00:02:00.314 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips
+Jan 14 00:02:00.315 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/02b920db-0ebe-4ce5-944a-7b8695796ad0 
+Jan 14 00:02:00.315 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/02b920db-0ebe-4ce5-944a-7b8695796ad0
+Jan 14 00:02:00.315 HYPERVISOR: exec_cmd: vm create R-2002-A 3 c7200 
+Jan 14 00:02:00.315 VM: VM R-2002-A created.
+Jan 14 00:02:00.315 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-2002-A 5014 
+Jan 14 00:02:00.315 HYPERVISOR: exec_cmd: c7200 get_mac_addr R-2002-A 
+Jan 14 00:02:00.315 HYPERVISOR: exec_cmd: vm get_status R-2002-A 
+Jan 14 00:02:00.315 HYPERVISOR: exec_cmd: vm slot_add_binding R-2002-A 0 0 C7200-IO-FE 
+Jan 14 00:02:00.316 HYPERVISOR: exec_cmd: vm set_disk0 R-2002-A 0 
+Jan 14 00:02:00.316 HYPERVISOR: exec_cmd: vm get_status R-2002-A 
+Jan 14 00:02:00.316 HYPERVISOR: exec_cmd: vm set_idle_pc R-2002-A 0x60189224 
+Jan 14 00:02:00.316 HYPERVISOR: exec_cmd: vm set_ios R-2002-A /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 14 00:02:00.317 HYPERVISOR: exec_cmd: c7200 set_mac_addr R-2002-A ca03.2be0.0000 
+Jan 14 00:02:00.317 HYPERVISOR: exec_cmd: vm set_nvram R-2002-A 512 
+Jan 14 00:02:00.317 HYPERVISOR: exec_cmd: vm set_ram R-2002-A 512 
+Jan 14 00:02:00.317 HYPERVISOR: exec_cmd: vm get_status R-2002-A 
+Jan 14 00:02:00.317 HYPERVISOR: exec_cmd: vm slot_remove_binding R-2002-A 0 0 
+Jan 14 00:02:00.318 HYPERVISOR: exec_cmd: vm get_status R-2002-A 
+Jan 14 00:02:00.318 HYPERVISOR: exec_cmd: vm slot_add_binding R-2002-A 0 0 C7200-IO-2FE 
+Jan 14 00:02:08.211 HYPERVISOR: exec_cmd: nio create_udp udp-acecf137-cbca-4b34-a080-1dce1f5c407b 10156 127.0.0.1 10157 
+Jan 14 00:02:08.423 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-2002-A 0 0 udp-acecf137-cbca-4b34-a080-1dce1f5c407b 
+Jan 14 00:02:08.423 HYPERVISOR: exec_cmd: vm get_status R-2002-A 
+Jan 14 00:02:08.577 HYPERVISOR: exec_cmd: nio create_udp udp-69e9be40-5ecb-4670-a5d4-1065846c6416 10160 127.0.0.1 10161 
+Jan 14 00:02:08.578 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-2002-A 0 1 udp-69e9be40-5ecb-4670-a5d4-1065846c6416 
+Jan 14 00:02:08.578 HYPERVISOR: exec_cmd: vm get_status R-2002-A 

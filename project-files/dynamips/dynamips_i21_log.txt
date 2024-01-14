@@ -1,30 +1,30 @@
-Jan 13 23:59:15.045 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
-Jan 13 23:59:15.045 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48003.
-Jan 13 23:59:15.050 HYPERVISOR: exec_cmd: hypervisor version 
-Jan 13 23:59:15.051 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips 
-Jan 13 23:59:15.051 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips
-Jan 13 23:59:15.051 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips/e1ecada5-a2b6-4728-a235-0d791b9d6201 
-Jan 13 23:59:15.051 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips/e1ecada5-a2b6-4728-a235-0d791b9d6201
-Jan 13 23:59:15.051 HYPERVISOR: exec_cmd: vm create R-FILIAL-A 10 c7200 
-Jan 13 23:59:15.051 VM: VM R-FILIAL-A created.
-Jan 13 23:59:15.051 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-FILIAL-A 5020 
-Jan 13 23:59:15.051 HYPERVISOR: exec_cmd: c7200 get_mac_addr R-FILIAL-A 
-Jan 13 23:59:15.052 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 
-Jan 13 23:59:15.052 HYPERVISOR: exec_cmd: vm slot_add_binding R-FILIAL-A 0 0 C7200-IO-FE 
-Jan 13 23:59:15.052 HYPERVISOR: exec_cmd: vm set_disk0 R-FILIAL-A 0 
-Jan 13 23:59:15.052 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 
-Jan 13 23:59:15.052 HYPERVISOR: exec_cmd: vm set_idle_pc R-FILIAL-A 0x60189224 
-Jan 13 23:59:15.053 HYPERVISOR: exec_cmd: vm set_ios R-FILIAL-A /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
-Jan 13 23:59:15.053 HYPERVISOR: exec_cmd: c7200 set_mac_addr R-FILIAL-A ca0a.32db.0000 
-Jan 13 23:59:15.053 HYPERVISOR: exec_cmd: vm set_nvram R-FILIAL-A 512 
-Jan 13 23:59:15.053 HYPERVISOR: exec_cmd: vm set_ram R-FILIAL-A 512 
-Jan 13 23:59:15.053 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 
-Jan 13 23:59:15.054 HYPERVISOR: exec_cmd: vm slot_remove_binding R-FILIAL-A 0 0 
-Jan 13 23:59:15.054 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 
-Jan 13 23:59:15.054 HYPERVISOR: exec_cmd: vm slot_add_binding R-FILIAL-A 0 0 C7200-IO-2FE 
-Jan 13 23:59:24.710 HYPERVISOR: exec_cmd: nio create_udp udp-a4b5f899-cf7d-4995-99dc-077866ccfa5f 10186 127.0.0.1 10187 
-Jan 13 23:59:24.919 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-FILIAL-A 0 1 udp-a4b5f899-cf7d-4995-99dc-077866ccfa5f 
-Jan 13 23:59:24.920 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 
-Jan 13 23:59:26.335 HYPERVISOR: exec_cmd: nio create_udp udp-1ca274f8-7569-48a2-9a0c-83003f3b6ae5 10220 127.0.0.1 10221 
-Jan 13 23:59:26.336 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-FILIAL-A 0 0 udp-1ca274f8-7569-48a2-9a0c-83003f3b6ae5 
-Jan 13 23:59:26.336 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 
+Jan 14 00:02:00.415 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 14 00:02:00.415 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 40643.
+Jan 14 00:02:00.422 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 14 00:02:00.422 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips 
+Jan 14 00:02:00.422 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips
+Jan 14 00:02:00.422 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/e1ecada5-a2b6-4728-a235-0d791b9d6201 
+Jan 14 00:02:00.423 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/e1ecada5-a2b6-4728-a235-0d791b9d6201
+Jan 14 00:02:00.423 HYPERVISOR: exec_cmd: vm create R-FILIAL-A 10 c7200 
+Jan 14 00:02:00.423 VM: VM R-FILIAL-A created.
+Jan 14 00:02:00.423 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-FILIAL-A 5020 
+Jan 14 00:02:00.423 HYPERVISOR: exec_cmd: c7200 get_mac_addr R-FILIAL-A 
+Jan 14 00:02:00.423 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 
+Jan 14 00:02:00.423 HYPERVISOR: exec_cmd: vm slot_add_binding R-FILIAL-A 0 0 C7200-IO-FE 
+Jan 14 00:02:00.423 HYPERVISOR: exec_cmd: vm set_disk0 R-FILIAL-A 0 
+Jan 14 00:02:00.424 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 
+Jan 14 00:02:00.424 HYPERVISOR: exec_cmd: vm set_idle_pc R-FILIAL-A 0x60189224 
+Jan 14 00:02:00.424 HYPERVISOR: exec_cmd: vm set_ios R-FILIAL-A /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 14 00:02:00.424 HYPERVISOR: exec_cmd: c7200 set_mac_addr R-FILIAL-A ca0a.32db.0000 
+Jan 14 00:02:00.425 HYPERVISOR: exec_cmd: vm set_nvram R-FILIAL-A 512 
+Jan 14 00:02:00.425 HYPERVISOR: exec_cmd: vm set_ram R-FILIAL-A 512 
+Jan 14 00:02:00.425 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 
+Jan 14 00:02:00.425 HYPERVISOR: exec_cmd: vm slot_remove_binding R-FILIAL-A 0 0 
+Jan 14 00:02:00.425 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 
+Jan 14 00:02:00.425 HYPERVISOR: exec_cmd: vm slot_add_binding R-FILIAL-A 0 0 C7200-IO-2FE 
+Jan 14 00:02:09.870 HYPERVISOR: exec_cmd: nio create_udp udp-6e1f2079-7918-4c2a-9720-c0324ad06a3a 10186 127.0.0.1 10187 
+Jan 14 00:02:10.079 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-FILIAL-A 0 1 udp-6e1f2079-7918-4c2a-9720-c0324ad06a3a 
+Jan 14 00:02:10.080 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 
+Jan 14 00:02:11.501 HYPERVISOR: exec_cmd: nio create_udp udp-7e2a1689-1e50-40fb-b38c-db8fd7c57c2f 10220 127.0.0.1 10221 
+Jan 14 00:02:11.502 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-FILIAL-A 0 0 udp-7e2a1689-1e50-40fb-b38c-db8fd7c57c2f 
+Jan 14 00:02:11.503 HYPERVISOR: exec_cmd: vm get_status R-FILIAL-A 

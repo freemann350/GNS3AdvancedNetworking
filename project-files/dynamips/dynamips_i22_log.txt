@@ -1,0 +1,28 @@
+Jan 13 23:59:15.081 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 13 23:59:15.081 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35605.
+Jan 13 23:59:15.088 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 13 23:59:15.088 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips 
+Jan 13 23:59:15.088 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips
+Jan 13 23:59:15.089 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips/568e59bc-eb0e-4f9a-90e9-ce6ce2c0c293 
+Jan 13 23:59:15.089 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/dynamips/568e59bc-eb0e-4f9a-90e9-ce6ce2c0c293
+Jan 13 23:59:15.089 HYPERVISOR: exec_cmd: vm create R-3002-A 13 c7200 
+Jan 13 23:59:15.089 VM: VM R-3002-A created.
+Jan 13 23:59:15.089 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-3002-A 5022 
+Jan 13 23:59:15.089 HYPERVISOR: exec_cmd: c7200 get_mac_addr R-3002-A 
+Jan 13 23:59:15.089 HYPERVISOR: exec_cmd: vm get_status R-3002-A 
+Jan 13 23:59:15.089 HYPERVISOR: exec_cmd: vm slot_add_binding R-3002-A 0 0 C7200-IO-FE 
+Jan 13 23:59:15.090 HYPERVISOR: exec_cmd: vm set_disk0 R-3002-A 0 
+Jan 13 23:59:15.090 HYPERVISOR: exec_cmd: vm get_status R-3002-A 
+Jan 13 23:59:15.090 HYPERVISOR: exec_cmd: vm set_idle_pc R-3002-A 0x60189224 
+Jan 13 23:59:15.090 HYPERVISOR: exec_cmd: vm set_ios R-3002-A /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 13 23:59:15.091 HYPERVISOR: exec_cmd: c7200 set_mac_addr R-3002-A ca0d.333b.0000 
+Jan 13 23:59:15.091 HYPERVISOR: exec_cmd: vm set_nvram R-3002-A 512 
+Jan 13 23:59:15.091 HYPERVISOR: exec_cmd: vm set_ram R-3002-A 512 
+Jan 13 23:59:15.091 HYPERVISOR: exec_cmd: vm get_status R-3002-A 
+Jan 13 23:59:15.091 HYPERVISOR: exec_cmd: vm slot_add_binding R-3002-A 1 0 PA-FE-TX 
+Jan 13 23:59:25.095 HYPERVISOR: exec_cmd: nio create_udp udp-0ef9128d-6488-4086-a170-76773c6790ee 10192 127.0.0.1 10193 
+Jan 13 23:59:25.304 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-3002-A 1 0 udp-0ef9128d-6488-4086-a170-76773c6790ee 
+Jan 13 23:59:25.304 HYPERVISOR: exec_cmd: vm get_status R-3002-A 
+Jan 13 23:59:25.463 HYPERVISOR: exec_cmd: nio create_udp udp-43142dfa-0f3f-46a3-b7e4-296deb194b5d 10196 127.0.0.1 10197 
+Jan 13 23:59:25.465 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-3002-A 0 0 udp-43142dfa-0f3f-46a3-b7e4-296deb194b5d 
+Jan 13 23:59:25.466 HYPERVISOR: exec_cmd: vm get_status R-3002-A 

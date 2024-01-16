@@ -1,0 +1,48 @@
+Jan 16 13:28:22.222 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 16 13:28:22.222 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57891.
+Jan 16 13:28:22.230 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 16 13:28:22.230 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips 
+Jan 16 13:28:22.230 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips
+Jan 16 13:28:22.230 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/6eaa92f6-fafd-4996-b943-3a0773268cee 
+Jan 16 13:28:22.230 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/6eaa92f6-fafd-4996-b943-3a0773268cee
+Jan 16 13:28:22.230 HYPERVISOR: exec_cmd: vm create R3 18 c7200 
+Jan 16 13:28:22.230 VM: VM R3 created.
+Jan 16 13:28:22.231 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5026 
+Jan 16 13:28:22.231 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Jan 16 13:28:22.231 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 16 13:28:22.231 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Jan 16 13:28:22.231 HYPERVISOR: exec_cmd: vm set_ios R3 /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:28:22.232 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 16 13:28:22.232 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60189224 
+Jan 16 13:28:22.232 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Jan 16 13:28:22.232 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Jan 16 13:28:22.232 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Jan 16 13:28:22.437 HYPERVISOR: exec_cmd: vm set_ios R3 /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:28:24.432 HYPERVISOR: exec_cmd: vm set_ios R3 /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:29:10.389 HYPERVISOR: exec_cmd: vm set_ios R3 /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:29:14.545 HYPERVISOR: exec_cmd: vm set_ios R3 /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:29:56.603 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 16 13:29:56.604 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 0 0 
+Jan 16 13:29:56.604 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 16 13:29:56.604 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-2FE 
+Jan 16 13:30:16.228 HYPERVISOR: exec_cmd: nio create_udp udp-a30370ce-81b1-4caf-8e2a-373f55adfe23 10236 127.0.0.1 10237 
+Jan 16 13:30:16.439 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-a30370ce-81b1-4caf-8e2a-373f55adfe23 
+Jan 16 13:30:16.440 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 16 13:30:19.484 HYPERVISOR: exec_cmd: nio create_udp udp-1bb93fcc-eed0-46dc-95c1-3b72cf24fb29 10240 127.0.0.1 10241 
+Jan 16 13:30:19.485 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-1bb93fcc-eed0-46dc-95c1-3b72cf24fb29 
+Jan 16 13:30:19.485 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 16 13:30:51.780 HYPERVISOR: exec_cmd: vm set_ios R3 /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:34:49.806 HYPERVISOR: exec_cmd: vm set_ios R3 /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:34:51.734 HYPERVISOR: exec_cmd: vm set_ios R3 /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:34:54.770 HYPERVISOR: exec_cmd: vm set_ios R3 /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:34:58.772 HYPERVISOR: exec_cmd: vm set_ios R3 /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:35:00.138 HYPERVISOR: exec_cmd: vm set_ios R3 /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:37:52.145 HYPERVISOR: exec_cmd: vm set_ios R3 /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:37:52.145 HYPERVISOR: exec_cmd: vm rename R3 R-1003-a 
+Jan 16 13:37:52.354 HYPERVISOR: exec_cmd: vm set_ios R-1003-a /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:37:58.489 HYPERVISOR: exec_cmd: vm set_ios R-1003-a /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:37:58.693 HYPERVISOR: exec_cmd: vm set_ios R-1003-a /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:38:00.642 HYPERVISOR: exec_cmd: vm set_ios R-1003-a /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:38:00.642 HYPERVISOR: exec_cmd: vm rename R-1003-a R-1003-A 
+Jan 16 13:38:00.892 HYPERVISOR: exec_cmd: vm set_ios R-1003-A /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 13:38:04.049 HYPERVISOR: exec_cmd: vm set_ios R-1003-A /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 

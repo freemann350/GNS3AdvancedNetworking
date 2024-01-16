@@ -1,0 +1,18 @@
+Jan 16 13:26:17.626 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 16 13:26:17.626 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 45307.
+Jan 16 13:26:17.633 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 16 13:26:17.633 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips 
+Jan 16 13:26:17.633 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips
+Jan 16 13:26:17.634 HYPERVISOR: exec_cmd: ethsw create Sw-Filial 
+Jan 16 13:26:21.686 HYPERVISOR: exec_cmd: nio create_udp udp-11c2bcad-22da-47cd-b14a-5ba9786caa50 10049 127.0.0.1 10048 
+Jan 16 13:26:21.686 HYPERVISOR: exec_cmd: ethsw add_nio Sw-Filial udp-11c2bcad-22da-47cd-b14a-5ba9786caa50 
+Jan 16 13:26:21.699 HYPERVISOR: exec_cmd: ethsw set_access_port Sw-Filial udp-11c2bcad-22da-47cd-b14a-5ba9786caa50 1 
+Jan 16 13:26:28.445 HYPERVISOR: exec_cmd: nio create_udp udp-31d13ada-18dd-4cbe-914f-1cbda7d3cfef 10184 127.0.0.1 10185 
+Jan 16 13:26:28.445 HYPERVISOR: exec_cmd: ethsw add_nio Sw-Filial udp-31d13ada-18dd-4cbe-914f-1cbda7d3cfef 
+Jan 16 13:26:28.463 HYPERVISOR: exec_cmd: ethsw set_access_port Sw-Filial udp-31d13ada-18dd-4cbe-914f-1cbda7d3cfef 1 
+Jan 16 13:26:49.878 HYPERVISOR: exec_cmd: ethsw set_access_port Sw-Filial udp-31d13ada-18dd-4cbe-914f-1cbda7d3cfef 1 
+Jan 16 13:26:49.887 HYPERVISOR: exec_cmd: ethsw set_access_port Sw-Filial udp-11c2bcad-22da-47cd-b14a-5ba9786caa50 1 
+Jan 16 13:27:04.079 HYPERVISOR: exec_cmd: ethsw set_access_port Sw-Filial udp-31d13ada-18dd-4cbe-914f-1cbda7d3cfef 1 
+Jan 16 13:27:04.360 HYPERVISOR: exec_cmd: ethsw set_access_port Sw-Filial udp-11c2bcad-22da-47cd-b14a-5ba9786caa50 1 
+Jan 16 13:27:14.413 HYPERVISOR: exec_cmd: ethsw set_access_port Sw-Filial udp-31d13ada-18dd-4cbe-914f-1cbda7d3cfef 1 
+Jan 16 13:27:14.569 HYPERVISOR: exec_cmd: ethsw set_access_port Sw-Filial udp-11c2bcad-22da-47cd-b14a-5ba9786caa50 1 

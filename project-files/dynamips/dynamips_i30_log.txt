@@ -1,0 +1,27 @@
+Jan 16 13:29:33.118 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 16 13:29:33.118 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52889.
+Jan 16 13:29:33.124 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 16 13:29:33.124 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips 
+Jan 16 13:29:33.124 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips
+Jan 16 13:29:33.125 HYPERVISOR: exec_cmd: ethsw create Switch1 
+Jan 16 13:30:11.859 HYPERVISOR: exec_cmd: nio create_udp udp-ae9527da-e117-4b67-bd54-c25c6a928d94 10231 127.0.0.1 10230 
+Jan 16 13:30:11.859 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-ae9527da-e117-4b67-bd54-c25c6a928d94 
+Jan 16 13:30:11.860 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-ae9527da-e117-4b67-bd54-c25c6a928d94 1 
+Jan 16 13:30:16.215 HYPERVISOR: exec_cmd: nio create_udp udp-85ec3018-6fff-4549-aa68-639b89072c62 10234 127.0.0.1 10235 
+Jan 16 13:30:16.215 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-85ec3018-6fff-4549-aa68-639b89072c62 
+Jan 16 13:30:16.216 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-85ec3018-6fff-4549-aa68-639b89072c62 1 
+Jan 16 13:32:03.079 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-ae9527da-e117-4b67-bd54-c25c6a928d94 1 
+Jan 16 13:32:03.080 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-85ec3018-6fff-4549-aa68-639b89072c62 1 
+Jan 16 13:33:25.702 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-ae9527da-e117-4b67-bd54-c25c6a928d94 1 
+Jan 16 13:33:25.703 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-85ec3018-6fff-4549-aa68-639b89072c62 1 
+Jan 16 13:33:27.307 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-ae9527da-e117-4b67-bd54-c25c6a928d94 1 
+Jan 16 13:33:27.312 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-85ec3018-6fff-4549-aa68-639b89072c62 1 
+Jan 16 13:33:29.204 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-ae9527da-e117-4b67-bd54-c25c6a928d94 1 
+Jan 16 13:33:29.205 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-85ec3018-6fff-4549-aa68-639b89072c62 1 
+Jan 16 13:44:23.669 HYPERVISOR: exec_cmd: ethsw rename Switch1 SW-1000 
+Jan 16 13:44:23.670 HYPERVISOR: exec_cmd: ethsw set_access_port SW-1000 udp-ae9527da-e117-4b67-bd54-c25c6a928d94 1 
+Jan 16 13:44:23.670 HYPERVISOR: exec_cmd: ethsw set_access_port SW-1000 udp-85ec3018-6fff-4549-aa68-639b89072c62 1 
+Jan 16 13:44:23.885 HYPERVISOR: exec_cmd: ethsw set_access_port SW-1000 udp-ae9527da-e117-4b67-bd54-c25c6a928d94 1 
+Jan 16 13:44:23.886 HYPERVISOR: exec_cmd: ethsw set_access_port SW-1000 udp-85ec3018-6fff-4549-aa68-639b89072c62 1 
+Jan 16 13:44:27.388 HYPERVISOR: exec_cmd: ethsw set_access_port SW-1000 udp-ae9527da-e117-4b67-bd54-c25c6a928d94 1 
+Jan 16 13:44:27.389 HYPERVISOR: exec_cmd: ethsw set_access_port SW-1000 udp-85ec3018-6fff-4549-aa68-639b89072c62 1 

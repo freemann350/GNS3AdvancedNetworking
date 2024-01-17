@@ -1,0 +1,66 @@
+Jan 16 22:54:55.037 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 16 22:54:55.037 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48891.
+Jan 16 22:54:55.044 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 16 22:54:55.045 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips 
+Jan 16 22:54:55.045 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips
+Jan 16 22:54:55.045 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/9b7100ca-b6bc-4ed3-88a3-9183fdfa22c3 
+Jan 16 22:54:55.045 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/9b7100ca-b6bc-4ed3-88a3-9183fdfa22c3
+Jan 16 22:54:55.045 HYPERVISOR: exec_cmd: vm create R-1001-F 25 c7200 
+Jan 16 22:54:55.045 VM: VM R-1001-F created.
+Jan 16 22:54:55.045 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-1001-F 5018 
+Jan 16 22:54:55.046 HYPERVISOR: exec_cmd: c7200 get_mac_addr R-1001-F 
+Jan 16 22:54:55.046 HYPERVISOR: exec_cmd: vm get_status R-1001-F 
+Jan 16 22:54:55.046 HYPERVISOR: exec_cmd: vm slot_add_binding R-1001-F 0 0 C7200-IO-FE 
+Jan 16 22:54:55.046 HYPERVISOR: exec_cmd: vm set_disk0 R-1001-F 0 
+Jan 16 22:54:55.046 HYPERVISOR: exec_cmd: vm get_status R-1001-F 
+Jan 16 22:54:55.046 HYPERVISOR: exec_cmd: vm set_idle_pc R-1001-F 0x60189224 
+Jan 16 22:54:55.047 HYPERVISOR: exec_cmd: vm set_ios R-1001-F /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 22:54:55.047 HYPERVISOR: exec_cmd: c7200 set_mac_addr R-1001-F ca19.175b.0000 
+Jan 16 22:54:55.047 HYPERVISOR: exec_cmd: vm set_nvram R-1001-F 512 
+Jan 16 22:54:55.048 HYPERVISOR: exec_cmd: vm set_ram R-1001-F 512 
+Jan 16 22:54:55.048 HYPERVISOR: exec_cmd: vm get_status R-1001-F 
+Jan 16 22:54:55.048 HYPERVISOR: exec_cmd: vm slot_remove_binding R-1001-F 0 0 
+Jan 16 22:54:55.048 HYPERVISOR: exec_cmd: vm get_status R-1001-F 
+Jan 16 22:54:55.048 HYPERVISOR: exec_cmd: vm slot_add_binding R-1001-F 0 0 C7200-IO-2FE 
+Jan 16 22:54:55.048 HYPERVISOR: exec_cmd: vm get_status R-1001-F 
+Jan 16 22:54:55.049 HYPERVISOR: exec_cmd: vm slot_add_binding R-1001-F 1 0 PA-FE-TX 
+Jan 16 22:54:55.049 HYPERVISOR: exec_cmd: vm get_status R-1001-F 
+Jan 16 22:54:55.049 HYPERVISOR: exec_cmd: vm slot_add_binding R-1001-F 2 0 PA-FE-TX 
+Jan 16 22:54:55.049 HYPERVISOR: exec_cmd: vm get_status R-1001-F 
+Jan 16 22:54:55.049 HYPERVISOR: exec_cmd: vm slot_add_binding R-1001-F 3 0 PA-FE-TX 
+Jan 16 22:55:01.577 HYPERVISOR: exec_cmd: nio create_udp udp-59a6552a-239a-4012-8afa-7df27d05970b 10096 127.0.0.1 10097 
+Jan 16 22:55:01.788 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1001-F 1 0 udp-59a6552a-239a-4012-8afa-7df27d05970b 
+Jan 16 22:55:01.789 HYPERVISOR: exec_cmd: vm get_status R-1001-F 
+Jan 16 22:55:02.361 HYPERVISOR: exec_cmd: nio create_udp udp-0d5c048d-595c-4f94-84f7-7b6c8259561a 10112 127.0.0.1 10113 
+Jan 16 22:55:02.362 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1001-F 2 0 udp-0d5c048d-595c-4f94-84f7-7b6c8259561a 
+Jan 16 22:55:02.362 HYPERVISOR: exec_cmd: vm get_status R-1001-F 
+Jan 16 22:55:02.744 HYPERVISOR: exec_cmd: nio create_udp udp-3275eecd-3d21-4aaf-905a-2b21f681df88 10124 127.0.0.1 10125 
+Jan 16 22:55:02.746 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1001-F 0 0 udp-3275eecd-3d21-4aaf-905a-2b21f681df88 
+Jan 16 22:55:02.746 HYPERVISOR: exec_cmd: vm get_status R-1001-F 
+Jan 16 22:55:02.948 HYPERVISOR: exec_cmd: nio create_udp udp-1a46fd78-7400-4e5a-bd4a-4a3596948151 10130 127.0.0.1 10131 
+Jan 16 22:55:02.949 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1001-F 0 1 udp-1a46fd78-7400-4e5a-bd4a-4a3596948151 
+Jan 16 22:55:02.950 HYPERVISOR: exec_cmd: vm get_status R-1001-F 
+Jan 16 22:55:09.713 HYPERVISOR: exec_cmd: nio create_udp udp-701c6c85-dd7a-421d-ac1c-13312bd59ad2 10246 127.0.0.1 10247 
+Jan 16 22:55:09.714 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1001-F 3 0 udp-701c6c85-dd7a-421d-ac1c-13312bd59ad2 
+Jan 16 22:55:09.714 HYPERVISOR: exec_cmd: vm get_status R-1001-F 
+Jan 16 23:56:27.571 HYPERVISOR: exec_cmd: vm set_ghost_status R-1001-F 2 
+Jan 16 23:56:27.572 HYPERVISOR: exec_cmd: vm set_ghost_file R-1001-F /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M10.image-512.ghost 
+Jan 16 23:56:27.573 HYPERVISOR: exec_cmd: vm get_status R-1001-F 
+Jan 16 23:56:27.574 HYPERVISOR: exec_cmd: vm set_config R-1001-F configs/i25_startup-config.cfg configs/i25_private-config.cfg 
+Jan 16 23:56:27.575 HYPERVISOR: exec_cmd: vm start R-1001-F 
+Jan 16 23:56:57.828 HYPERVISOR: exec_cmd: vm extract_config R-1001-F 
+Jan 16 23:57:27.828 HYPERVISOR: exec_cmd: vm extract_config R-1001-F 
+Jan 17 00:53:28.018 HYPERVISOR: exec_cmd: vm extract_config R-1001-F 
+Jan 17 00:54:09.401 HYPERVISOR: exec_cmd: vm get_status R-1001-F 
+Jan 17 00:54:09.402 HYPERVISOR: exec_cmd: vm stop R-1001-F 
+Jan 17 00:54:09.589 VM: VM R-1001-F shutdown.
+Jan 17 00:54:09.590 HYPERVISOR: exec_cmd: vm extract_config R-1001-F 
+Jan 17 00:58:16.267 HYPERVISOR: exec_cmd: vm get_status R-1001-F 
+Jan 17 00:58:16.268 HYPERVISOR: exec_cmd: vm extract_config R-1001-F 
+Jan 17 00:58:16.624 HYPERVISOR: exec_cmd: vm get_status R-1001-F 
+Jan 17 00:58:16.624 HYPERVISOR: exec_cmd: vm extract_config R-1001-F 
+Jan 17 00:58:16.625 HYPERVISOR: exec_cmd: vm delete R-1001-F 
+Jan 17 00:58:16.625 VM: VM R-1001-F destroyed.
+Jan 17 00:58:16.626 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 17 00:58:17.013 HYPERVISOR: Stopped.
+Jan 17 00:58:17.013 GENERAL: reset done.

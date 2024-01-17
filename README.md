@@ -2,12 +2,12 @@
 
 ![Overall Scenario](https://github.com/freemann350/GNS3AdvancedNetworking/assets/25934321/d9c38a19-da99-434b-aac0-d0b016a71d63)
 
-GNS3 scenario project with the following Networking technologies:
+Academic GNS3 project with the following Networking technologies:
 
 - IPv4/IPv6
-- OSPF (v2/v3)
+- OSPF (v2/v3 with OSPF AF)
 - RIP (Version 2 / RIPng)
-- BGP
+- BGP (normal & confederations)
 - MPLS
 - VPN MPLS
 - QOS

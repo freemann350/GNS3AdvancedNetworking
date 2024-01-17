@@ -1,0 +1,39 @@
+Jan 16 22:54:55.194 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 16 22:54:55.194 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49065.
+Jan 16 22:54:55.200 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 16 22:54:55.200 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips 
+Jan 16 22:54:55.200 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips
+Jan 16 22:54:55.200 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/d8e18682-47a3-41b8-82dd-05603fac1918 
+Jan 16 22:54:55.200 GENERAL: working_dir=/home/alex/GNS3/projects/TAR/ProjetoTAR/project-files/dynamips/d8e18682-47a3-41b8-82dd-05603fac1918
+Jan 16 22:54:55.200 HYPERVISOR: exec_cmd: vm create R-SEDE-B 4 c7200 
+Jan 16 22:54:55.201 VM: VM R-SEDE-B created.
+Jan 16 22:54:55.201 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-SEDE-B 5015 
+Jan 16 22:54:55.201 HYPERVISOR: exec_cmd: c7200 get_mac_addr R-SEDE-B 
+Jan 16 22:54:55.201 HYPERVISOR: exec_cmd: vm get_status R-SEDE-B 
+Jan 16 22:54:55.201 HYPERVISOR: exec_cmd: vm slot_add_binding R-SEDE-B 0 0 C7200-IO-FE 
+Jan 16 22:54:55.202 HYPERVISOR: exec_cmd: vm set_disk0 R-SEDE-B 0 
+Jan 16 22:54:55.202 HYPERVISOR: exec_cmd: vm get_status R-SEDE-B 
+Jan 16 22:54:55.202 HYPERVISOR: exec_cmd: vm set_idle_pc R-SEDE-B 0x60189224 
+Jan 16 22:54:55.203 HYPERVISOR: exec_cmd: vm set_ios R-SEDE-B /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 16 22:54:55.203 HYPERVISOR: exec_cmd: c7200 set_mac_addr R-SEDE-B ca04.31b0.0000 
+Jan 16 22:54:55.203 HYPERVISOR: exec_cmd: vm set_nvram R-SEDE-B 512 
+Jan 16 22:54:55.203 HYPERVISOR: exec_cmd: vm set_ram R-SEDE-B 512 
+Jan 16 22:54:55.204 HYPERVISOR: exec_cmd: vm get_status R-SEDE-B 
+Jan 16 22:54:55.204 HYPERVISOR: exec_cmd: vm slot_remove_binding R-SEDE-B 0 0 
+Jan 16 22:54:55.204 HYPERVISOR: exec_cmd: vm get_status R-SEDE-B 
+Jan 16 22:54:55.204 HYPERVISOR: exec_cmd: vm slot_add_binding R-SEDE-B 0 0 C7200-IO-2FE 
+Jan 16 22:55:04.777 HYPERVISOR: exec_cmd: nio create_udp udp-6d3c6f2d-3d27-4c4a-8e96-201a5ff24dd6 10166 127.0.0.1 10167 
+Jan 16 22:55:04.986 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-SEDE-B 0 1 udp-6d3c6f2d-3d27-4c4a-8e96-201a5ff24dd6 
+Jan 16 22:55:04.987 HYPERVISOR: exec_cmd: vm get_status R-SEDE-B 
+Jan 16 22:55:05.204 HYPERVISOR: exec_cmd: nio create_udp udp-258a2e5d-330e-4f71-8f70-e3efdb4e1f65 10172 127.0.0.1 10173 
+Jan 16 22:55:05.205 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-SEDE-B 0 0 udp-258a2e5d-330e-4f71-8f70-e3efdb4e1f65 
+Jan 16 22:55:05.206 HYPERVISOR: exec_cmd: vm get_status R-SEDE-B 
+Jan 17 00:58:16.292 HYPERVISOR: exec_cmd: vm get_status R-SEDE-B 
+Jan 17 00:58:16.294 HYPERVISOR: exec_cmd: vm extract_config R-SEDE-B 
+Jan 17 00:58:16.393 HYPERVISOR: exec_cmd: vm get_status R-SEDE-B 
+Jan 17 00:58:16.393 HYPERVISOR: exec_cmd: vm extract_config R-SEDE-B 
+Jan 17 00:58:16.393 HYPERVISOR: exec_cmd: vm delete R-SEDE-B 
+Jan 17 00:58:16.394 VM: VM R-SEDE-B destroyed.
+Jan 17 00:58:16.394 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 17 00:58:16.654 HYPERVISOR: Stopped.
+Jan 17 00:58:16.654 GENERAL: reset done.

@@ -1,1 +1,0 @@
-Jan 16 13:37:41.089 VM: renamed from 'R2' to 'R-1002-B'

@@ -1,6 +1,6 @@
 # Context
 
-![Overall Scenario](https://github.com/freemann350/GNS3AdvancedNetworking/assets/25934321/d9c38a19-da99-434b-aac0-d0b016a71d63)
+![Overall Scenario](https://github.com/freemann350/GNS3AdvancedNetworking/assets/25934321/8c45664e-fde9-4b72-99da-1195b50463ba)
 
 Academic GNS3 project with the following Networking technologies:
 

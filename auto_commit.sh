@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Press OK when GNS3 is shutdown"
+echo "Press OK when GNS3 is shutdown..."
 read
 # Get the current date and time in the specified format
 commit_date=$(date "+%d-%m-%y_%H:%M:%S")

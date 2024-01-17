@@ -18,4 +18,6 @@ The required files can be found on this [Drive Share](https://drive.google.com/d
 
 **!! WARNING !! Running all devices is hardware demanding, be at your own risk**
 
+The folder Manual Configs is made for [Obsidian.md](https://obsidian.md/).
+
 EI@IPL

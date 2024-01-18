@@ -10,6 +10,13 @@
 4. [[L3VPN/README|Configuração L3 VPN]]
 5. [[QoS/README|Configuração QoS]]
 
+###  TODO
+
+- BGP PREFERENCIAL (MED, etc)
+- Route reflector
+- MPLS
+- L3VPN
+- QoS
 # Requisitos
 
 O estudante deve considerar a seguinte lista de requisitos:

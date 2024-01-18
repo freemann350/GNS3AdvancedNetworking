@@ -203,7 +203,7 @@
                 "rotation": 0,
                 "svg": "<svg width=\"243.28786465907183\" height=\"267.8159203980099\"><ellipse cx=\"121\" rx=\"122\" cy=\"133\" ry=\"134\" fill=\"#a57f1f\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
                 "x": -553,
-                "y": -373,
+                "y": -367,
                 "z": 0
             },
             {
@@ -1952,7 +1952,7 @@
                 "symbol": ":/symbols/router.svg",
                 "template_id": "57bdd266-a004-4cfd-81e5-7221595b6d9d",
                 "width": 66,
-                "x": -276,
+                "x": -275,
                 "y": 104,
                 "z": 1
             },
@@ -3667,7 +3667,7 @@
                 "symbol": ":/symbols/router.svg",
                 "template_id": "57bdd266-a004-4cfd-81e5-7221595b6d9d",
                 "width": 66,
-                "x": 370,
+                "x": 369,
                 "y": -339,
                 "z": 1
             },
@@ -3737,7 +3737,7 @@
                 "template_id": "57bdd266-a004-4cfd-81e5-7221595b6d9d",
                 "width": 66,
                 "x": -432,
-                "y": -351,
+                "y": -343,
                 "z": 1
             },
             {
@@ -3825,5 +3825,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.2.44.1",
-    "zoom": 119
+    "zoom": 100
 }

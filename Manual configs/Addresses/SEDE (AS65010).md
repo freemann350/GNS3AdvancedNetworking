@@ -4,7 +4,7 @@
 conf t
 !
 int l0
- ip add 192.168.254.2 255.255.255.255
+ ip add 192.168.254.1 255.255.255.255
  ipv6 add 2221:2566:6:1111::A/128
  ipv6 add FE80::CEDE:A:1 link-local
  no sh

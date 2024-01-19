@@ -76,7 +76,7 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"1171.348258706468\" height=\"498.6137748401744\"><ellipse cx=\"585\" rx=\"586\" cy=\"249\" ry=\"250\" fill=\"#aa5500\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
-                "x": -580,
+                "x": -578,
                 "y": -475,
                 "z": -1
             },
@@ -3529,8 +3529,8 @@
                 "symbol": ":/symbols/router.svg",
                 "template_id": "57bdd266-a004-4cfd-81e5-7221595b6d9d",
                 "width": 66,
-                "x": 370,
-                "y": -180,
+                "x": 369,
+                "y": -178,
                 "z": 1
             },
             {
@@ -3825,5 +3825,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.2.44.1",
-    "zoom": 100
+    "zoom": 119
 }

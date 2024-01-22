@@ -1,6 +1,7 @@
 # Context
 
-![Overall Scenario](https://github.com/freemann350/GNS3AdvancedNetworking/assets/25934321/8c45664e-fde9-4b72-99da-1195b50463ba)
+![Overall Scenario](https://github.com/freemann350/GNS3AdvancedNetworking/assets/25934321/8d64b70d-50f1-4ba7-a2c4-3ad09d36c123)
+
 
 Academic GNS3 project with the following Networking technologies:
 
@@ -12,7 +13,7 @@ Academic GNS3 project with the following Networking technologies:
 - VPN MPLS
 - QOS
 
-This repo is mostly used for backups due to GNS3 fidgetiness, but can be tried and tested by anyone.
+This repo was mostly used for backups due to GNS3 fidgetiness, but can be tried and tested by anyone.
 
 The required files can be found on this [Drive Share](https://drive.google.com/drive/folders/1aVYDkGjsylTrrPmm9Ge2ACSttrJACF8t?usp=drive_link).
 

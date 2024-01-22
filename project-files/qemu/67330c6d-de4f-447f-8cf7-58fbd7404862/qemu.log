@@ -1,4 +1,4 @@
-Start QEMU with /usr/bin/qemu-system-x86_64 -name WebServer -m 256M -smp cpus=1,sockets=1 -enable-kvm -machine smm=off -boot order=c -drive 'file=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/qemu/67330c6d-de4f-447f-8cf7-58fbd7404862/hda_disk.qcow2,if=ide,index=0,media=disk,id=drive0' -uuid 67330c6d-de4f-447f-8cf7-58fbd7404862 -serial telnet:127.0.0.1:5001,server,nowait -monitor tcp:127.0.0.1:43847,server,nowait -net none -device e1000,mac=0c:33:0c:6d:00:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10321,localaddr=127.0.0.1:10320 -display none
+Start QEMU with /usr/bin/qemu-system-x86_64 -name WebServer -m 256M -smp cpus=1,sockets=1 -enable-kvm -machine smm=off -boot order=c -drive 'file=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/ProjetoTAR/project-files/qemu/67330c6d-de4f-447f-8cf7-58fbd7404862/hda_disk.qcow2,if=ide,index=0,media=disk,id=drive0' -uuid 67330c6d-de4f-447f-8cf7-58fbd7404862 -serial telnet:127.0.0.1:5001,server,nowait -monitor tcp:127.0.0.1:33235,server,nowait -net none -device e1000,mac=0c:33:0c:6d:00:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10321,localaddr=127.0.0.1:10320 -display none
 
 Execution log:
-qemu-system-x86_64: terminating on signal 15 from pid 34829 (/usr/bin/python)
+qemu-system-x86_64: terminating on signal 15 from pid 41338 (/usr/bin/python)

@@ -1,4 +1,4 @@
-# This the configuration for PC2
+# This the configuration for PC-Sede
 #
 # Uncomment the following line to enable DHCP
 # dhcp
@@ -6,4 +6,4 @@
 # ip 192.168.1.1 255.0.0.0
 #
 
-set pcname PC2
+set pcname PC-Sede

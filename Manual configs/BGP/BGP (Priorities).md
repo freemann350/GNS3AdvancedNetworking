@@ -1,60 +1,214 @@
+# AS 1000
 
-- PREFERENCIAL PARA 1000 DE AS 2001 **f1/1** (LINK PRIORITY)
-- PREFERENCIAL PARA 1000 DE AS 2002 **R-2002-A (f0/0)** (MED)
-- Preferencial de 3001 para 2001 **f0/1**
-- (3001, 3002) Rerouting para AS 2002 se 2001 falhar (MED)
----
-**AS 1000**
-Definir LP em R-1001-F (150) (preferencia o R-1001-F)
-Definir LP em R-1001-G (140)
-Definir LP em R-1001-H (130)
-Definir LP em R-1001-I (120)
-
-Definir MED em R-1001-G (preferencia o R-1001-F)
-Definir MED em R-1001-G (preferencia o R-1001-F)
-
-**AS 2001**
-Definir LP em R-2001-B (150) (preferencia o R-2001-B)
-Definir MED em R-2001-C (preferencia o R-2001-B)
-
-**AS 2002**
-Definir MED em R-2002-C (preferencia o AS 2001)
+## R-1001-F (LP TO 2001)
 
 ```c
-F
---
-...
-neighbor 2001:2:BEEF:1001::2 route-map MED_100 out
-...
-ip as-path access-list 1 permit _1000$
-
-route-map MED_100 permit 10
+conf t
+!
+ip as-path access-list 1 permit _2001$
+!
+route-map LOCPREF_120_2001 permit 10
  match as-path 1
- set metric 100
+ set local-preference 150
+!
+router bgp 1001
+ !
+ address-family ipv4
+  neighbor 130.0.1.2 route-map LOCPREF_120_2001 in
+  exit-address-family
+ !
+ address-family ipv6
+  neighbor 2221:2566:1:1020::2 route-map LOCPREF_120_2001 in
+  exit-address-family
+!
+end
+!
 
---
-H
---
-...
-neighbor 2001:2:BEEF:1003::2 route-map MED_100 out
-...
-ip as-path access-list 1 permit _1000$
-
-route-map MED_100 permit 10
- match as-path 1
- set metric 100
-
---
-K
---
-...
-neighbor 2001:2:BEEF:1003::1 route-map LOCPREF_120 in
-neighbor 2001:2:BEEF:1004::1 route-map LOCPREF_120 in
-...
-ip as-path access-list 1 permit _1000$
-
-route-map LOCPREF_120 permit 10
- match as-path 1
- set local-preference 120
 ```
 
+## R-1001-G (MED FROM 2001)
+
+```c
+conf t
+!
+ip as-path access-list 1 permit _2001$
+!
+route-map MED_100_2001 permit 10
+ match as-path 1
+ set metric 100
+!
+router bgp 1001
+ !
+ address-family ipv4
+  neighbor 130.0.1.6 route-map MED_100_2001 out
+  exit-address-family
+ ! 
+ address-family ipv6
+  neighbor 2221:2566:1:1120::2 route-map MED_100_2001 out
+  exit-address-family
+ !
+end
+!
+
+```
+
+## R-1001-H (MED FROM 2002)
+
+```c
+conf t
+!
+ip as-path access-list 1 permit _2002$
+!
+route-map MED_100_2001 permit 10
+ match as-path 1
+ set metric 100
+!
+router bgp 1001
+ !
+ address-family ipv4
+  neighbor 130.0.3.2 route-map MED_100_2002 out
+  exit-address-family
+ ! 
+ address-family ipv6
+  neighbor 2221:2566:1:1130::2 route-map MED_100_2002 out
+  exit-address-family
+ !
+end
+!
+
+```
+
+## R-1001-I (LP TO 2002)
+
+```c
+conf t
+!
+ip as-path access-list 1 permit _2002$
+!
+route-map LOCPREF_120_2002 permit 10
+ match as-path 1
+ set local-preference 150
+!
+router bgp 1001
+ !
+ address-family ipv4
+  neighbor 130.0.3.6 route-map LOCPREF_120_2002 in
+  exit-address-family
+ !
+ address-family ipv6
+  neighbor 2221:2566:1:1130::2 route-map LOCPREF_120_2002 in
+  exit-address-family
+!
+end
+!
+
+```
+
+# AS 2001
+
+## R-2001-B (LP TO 3001)
+
+```c
+conf t
+!
+ip as-path access-list 1 permit _3001$
+!
+route-map LOCPREF_120_3001 permit 10
+ match as-path 1
+ set local-preference 150
+!
+router bgp 2001
+ !
+ address-family ipv4
+  neighbor 133.0.255.1 route-map LOCPREF_120_3001 in
+  exit-address-family
+ !
+ address-family ipv6
+  neighbor 2221:2566:4:3001::A route-map LOCPREF_120_3001 in
+  exit-address-family
+!
+end
+!
+
+```
+
+## R-2001-C (MED FROM 3001)
+ 
+```c
+conf t
+!
+ip as-path access-list 1 permit _2001$
+!
+route-map MED_100_2001 permit 10
+ match as-path 1
+ set metric 100
+!
+router bgp 2001
+ !
+ address-family ipv4
+  neighbor 133.0.255.1 route-map MED_100_2001 out
+  exit-address-family
+ ! 
+ address-family ipv6
+  neighbor 2221:2566:4:3001::A route-map MED_100_2001 out
+  exit-address-family
+ !
+end
+!
+
+```
+# AS 2002
+
+## R-2002-A (LP TO 1000)
+
+```c
+conf t
+!
+ip as-path access-list 1 permit _1000$
+!
+route-map LOCPREF_120_1000 permit 10
+ match as-path 1
+ set local-preference 150
+!
+router bgp 2002
+ !
+ address-family ipv4
+  neighbor 130.0.3.5 route-map LOCPREF_120_3001 in
+  exit-address-family
+ !
+ address-family ipv6
+  neighbor 2221:2566:1:1130::1 route-map LOCPREF_120_3001 in
+  exit-address-family
+!
+end
+!
+
+```
+
+# AS 3001
+
+## R-3001-A (MED FROM 2001)
+ 
+```c
+conf t
+!
+ip as-path access-list 1 permit _3001$
+!
+route-map MED_100_3001 permit 10
+ match as-path 1
+ set metric 100
+!
+router bgp 3001
+ !
+ address-family ipv4
+  neighbor 131.0.255.3 route-map MED_100_3001 out
+  exit-address-family
+ ! 
+ address-family ipv6
+  neighbor 2221:2566:2:2001::C route-map MED_100_3001 out
+  exit-address-family
+ !
+end
+!
+
+```

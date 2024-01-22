@@ -11,27 +11,26 @@ address-family ipv4 unicast
  router-id 6.6.4.1
  exit-address-family
 !
-address-family ipv6 unicast
- router-id 6.6.6.1
- exit-address-family
-!
 end
 !
+
 ```
 
 ```c
 conf t
 !
+interface f0/0
+ ospfv3 1 ipv4 area 0
+!
 interface f0/1
  ospfv3 1 ipv4 area 0
- ospfv3 1 ipv6 area 0
 !
 interface l0
  ospfv3 1 ipv4 area 0
- ospfv3 1 ipv6 area 0
 !
 end
 !
+
 ```
 
 ## R-SEDE-B
@@ -47,10 +46,6 @@ address-family ipv4 unicast
  router-id 6.6.4.2
  exit-address-family
 !
-address-family ipv6 unicast
- router-id 6.6.6.2
- exit-address-family
-!
 end
 !
 ```
@@ -60,11 +55,9 @@ conf t
 !
 interface f0/0
  ospfv3 1 ipv4 area 0
- ospfv3 1 ipv6 area 0
 !
 interface l0
  ospfv3 1 ipv4 area 0
- ospfv3 1 ipv6 area 0
 !
 end
 !

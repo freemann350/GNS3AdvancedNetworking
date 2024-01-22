@@ -11,16 +11,6 @@
 
 ###  TODO
 
-- BGP **next-hop-self** em links do mesmo AS 
-- Links paralelos (port-channels) entre T2 e T3
-- BGP PREFERENCIAL (MED, etc)
-	- PREFERENCIAL PARA 1000 DE AS 2001 **f1/1** (LINK PRIORITY)
-	- PREFERENCIAL PARA 1000 DE AS 2002 **R-2002-A (f0/0)** (MED)
-	- Preferencial de 3001 para 2001 **f0/1**
-	- (3001, 3002) Rerouting para AS 2002 se 2001 falhar (MED)
-- Route reflector
-- L3VPN
-- QoS
 # Requisitos
 
 O estudante deve considerar a seguinte lista de requisitos:
@@ -50,6 +40,7 @@ O estudante deve considerar a seguinte lista de requisitos:
 
 ---
 # INFO
+
 Esta indicação destina-se apenas a quem tem no projeto a seguinte situação:  
 - No Tier 1, a ligação eBGP para os Tier 2A ou Tier 2B é feita a partir de um router que se encontra numa área OSPF do tipo Stub, Totally Stub ou NSSA.  
   

@@ -208,11 +208,11 @@
             },
             {
                 "drawing_id": "42bb79e5-7d2a-41dc-85e4-b03167c96cad",
-                "locked": false,
+                "locked": true,
                 "rotation": 0,
                 "svg": "<svg width=\"438.6638655462185\" height=\"267.0\"><ellipse cx=\"219\" rx=\"220\" cy=\"133\" ry=\"134\" fill=\"#d9a429\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
-                "x": 321,
-                "y": -365,
+                "x": 322,
+                "y": -357,
                 "z": 0
             },
             {

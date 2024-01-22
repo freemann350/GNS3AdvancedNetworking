@@ -1,0 +1,35 @@
+Jan 22 16:40:03.952 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 22 16:40:03.952 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35249.
+Jan 22 16:40:03.958 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 22 16:40:03.958 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/GNS3AdvancedNetworking/project-files/dynamips 
+Jan 22 16:40:03.958 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/GNS3AdvancedNetworking/project-files/dynamips
+Jan 22 16:40:03.958 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/GNS3AdvancedNetworking/project-files/dynamips/5180bd71-6fb2-4151-834f-5e3d70c9cb1b 
+Jan 22 16:40:03.958 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/GNS3AdvancedNetworking/project-files/dynamips/5180bd71-6fb2-4151-834f-5e3d70c9cb1b
+Jan 22 16:40:03.958 HYPERVISOR: exec_cmd: vm create R-3001-A 14 c7200 
+Jan 22 16:40:03.958 VM: VM R-3001-A created.
+Jan 22 16:40:03.959 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-3001-A 5037 
+Jan 22 16:40:03.959 HYPERVISOR: exec_cmd: c7200 get_mac_addr R-3001-A 
+Jan 22 16:40:03.959 HYPERVISOR: exec_cmd: vm get_status R-3001-A 
+Jan 22 16:40:03.959 HYPERVISOR: exec_cmd: vm slot_add_binding R-3001-A 0 0 C7200-IO-FE 
+Jan 22 16:40:03.959 HYPERVISOR: exec_cmd: vm set_disk0 R-3001-A 0 
+Jan 22 16:40:03.959 HYPERVISOR: exec_cmd: vm get_status R-3001-A 
+Jan 22 16:40:03.959 HYPERVISOR: exec_cmd: vm set_idle_pc R-3001-A 0x60189224 
+Jan 22 16:40:03.960 HYPERVISOR: exec_cmd: vm set_ios R-3001-A /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 22 16:40:03.960 HYPERVISOR: exec_cmd: c7200 set_mac_addr R-3001-A ca0e.336e.0000 
+Jan 22 16:40:03.960 HYPERVISOR: exec_cmd: vm set_nvram R-3001-A 512 
+Jan 22 16:40:03.961 HYPERVISOR: exec_cmd: vm set_ram R-3001-A 512 
+Jan 22 16:40:03.961 HYPERVISOR: exec_cmd: vm get_status R-3001-A 
+Jan 22 16:40:03.961 HYPERVISOR: exec_cmd: vm slot_remove_binding R-3001-A 0 0 
+Jan 22 16:40:03.961 HYPERVISOR: exec_cmd: vm get_status R-3001-A 
+Jan 22 16:40:03.961 HYPERVISOR: exec_cmd: vm slot_add_binding R-3001-A 0 0 C7200-IO-2FE 
+Jan 22 16:40:03.961 HYPERVISOR: exec_cmd: vm get_status R-3001-A 
+Jan 22 16:40:03.962 HYPERVISOR: exec_cmd: vm slot_add_binding R-3001-A 1 0 PA-2FE-TX 
+Jan 22 16:40:03.962 HYPERVISOR: exec_cmd: vm get_status R-3001-A 
+Jan 22 16:40:03.962 HYPERVISOR: exec_cmd: vm slot_add_binding R-3001-A 2 0 PA-2FE-TX 
+Jan 22 16:40:06.549 HYPERVISOR: exec_cmd: vm get_status R-3001-A 
+Jan 22 16:40:06.556 HYPERVISOR: exec_cmd: vm extract_config R-3001-A 
+Jan 22 16:40:06.558 HYPERVISOR: exec_cmd: vm delete R-3001-A 
+Jan 22 16:40:06.558 VM: VM R-3001-A destroyed.
+Jan 22 16:40:06.561 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 22 16:40:06.960 HYPERVISOR: Stopped.
+Jan 22 16:40:06.960 GENERAL: reset done.

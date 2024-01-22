@@ -1,0 +1,55 @@
+Jan 22 16:28:31.830 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 22 16:28:31.830 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50979.
+Jan 22 16:28:31.837 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 22 16:28:31.837 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/GNS3AdvancedNetworking/project-files/dynamips 
+Jan 22 16:28:31.838 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/GNS3AdvancedNetworking/project-files/dynamips
+Jan 22 16:28:31.838 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/GNS3AdvancedNetworking/project-files/dynamips/6eaa92f6-fafd-4996-b943-3a0773268cee 
+Jan 22 16:28:31.838 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/GNS3AdvancedNetworking/project-files/dynamips/6eaa92f6-fafd-4996-b943-3a0773268cee
+Jan 22 16:28:31.838 HYPERVISOR: exec_cmd: vm create R-1003-A 18 c7200 
+Jan 22 16:28:31.838 VM: VM R-1003-A created.
+Jan 22 16:28:31.838 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-1003-A 5040 
+Jan 22 16:28:31.838 HYPERVISOR: exec_cmd: c7200 get_mac_addr R-1003-A 
+Jan 22 16:28:31.838 HYPERVISOR: exec_cmd: vm get_status R-1003-A 
+Jan 22 16:28:31.838 HYPERVISOR: exec_cmd: vm slot_add_binding R-1003-A 0 0 C7200-IO-FE 
+Jan 22 16:28:31.839 HYPERVISOR: exec_cmd: vm set_disk0 R-1003-A 0 
+Jan 22 16:28:31.839 HYPERVISOR: exec_cmd: vm get_status R-1003-A 
+Jan 22 16:28:31.839 HYPERVISOR: exec_cmd: vm set_idle_pc R-1003-A 0x60189224 
+Jan 22 16:28:31.839 HYPERVISOR: exec_cmd: vm set_ios R-1003-A /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 22 16:28:31.840 HYPERVISOR: exec_cmd: c7200 set_mac_addr R-1003-A ca12.2f99.0000 
+Jan 22 16:28:31.840 HYPERVISOR: exec_cmd: vm set_nvram R-1003-A 512 
+Jan 22 16:28:31.840 HYPERVISOR: exec_cmd: vm set_ram R-1003-A 512 
+Jan 22 16:28:31.840 HYPERVISOR: exec_cmd: vm get_status R-1003-A 
+Jan 22 16:28:31.840 HYPERVISOR: exec_cmd: vm slot_remove_binding R-1003-A 0 0 
+Jan 22 16:28:31.840 HYPERVISOR: exec_cmd: vm get_status R-1003-A 
+Jan 22 16:28:31.840 HYPERVISOR: exec_cmd: vm slot_add_binding R-1003-A 0 0 C7200-IO-2FE 
+Jan 22 16:28:31.841 HYPERVISOR: exec_cmd: vm get_status R-1003-A 
+Jan 22 16:28:31.841 HYPERVISOR: exec_cmd: vm slot_add_binding R-1003-A 1 0 PA-FE-TX 
+Jan 22 16:28:42.221 HYPERVISOR: exec_cmd: nio create_udp udp-9e9b7d3e-9594-4ff5-b7ca-5a3c9ab780d3 10162 127.0.0.1 10163 
+Jan 22 16:28:42.431 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1003-A 0 1 udp-9e9b7d3e-9594-4ff5-b7ca-5a3c9ab780d3 
+Jan 22 16:28:42.431 HYPERVISOR: exec_cmd: vm get_status R-1003-A 
+Jan 22 16:28:42.629 HYPERVISOR: exec_cmd: nio create_udp udp-d724af7d-390d-4abe-828c-b672600098e8 10166 127.0.0.1 10167 
+Jan 22 16:28:42.630 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1003-A 0 0 udp-d724af7d-390d-4abe-828c-b672600098e8 
+Jan 22 16:28:42.630 HYPERVISOR: exec_cmd: vm get_status R-1003-A 
+Jan 22 16:28:48.969 HYPERVISOR: exec_cmd: nio create_udp udp-73e8c1d5-3b2b-4bd5-96e5-75d03fa6839e 10302 127.0.0.1 10303 
+Jan 22 16:28:48.971 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-1003-A 1 0 udp-73e8c1d5-3b2b-4bd5-96e5-75d03fa6839e 
+Jan 22 16:28:48.971 HYPERVISOR: exec_cmd: vm get_status R-1003-A 
+Jan 22 16:28:57.572 HYPERVISOR: exec_cmd: vm set_ghost_status R-1003-A 2 
+Jan 22 16:28:57.573 HYPERVISOR: exec_cmd: vm set_ghost_file R-1003-A /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/GNS3AdvancedNetworking/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M10.image-512.ghost 
+Jan 22 16:28:57.573 HYPERVISOR: exec_cmd: vm get_status R-1003-A 
+Jan 22 16:28:57.574 HYPERVISOR: exec_cmd: vm set_config R-1003-A configs/i18_startup-config.cfg configs/i18_private-config.cfg 
+Jan 22 16:28:57.575 HYPERVISOR: exec_cmd: vm start R-1003-A 
+Jan 22 16:29:27.813 HYPERVISOR: exec_cmd: vm extract_config R-1003-A 
+Jan 22 16:30:27.815 HYPERVISOR: exec_cmd: vm extract_config R-1003-A 
+Jan 22 16:39:50.380 HYPERVISOR: exec_cmd: vm get_status R-1003-A 
+Jan 22 16:39:50.381 HYPERVISOR: exec_cmd: vm stop R-1003-A 
+Jan 22 16:39:50.526 VM: VM R-1003-A shutdown.
+Jan 22 16:39:50.528 HYPERVISOR: exec_cmd: vm extract_config R-1003-A 
+Jan 22 16:39:52.682 HYPERVISOR: exec_cmd: vm get_status R-1003-A 
+Jan 22 16:39:52.683 HYPERVISOR: exec_cmd: vm extract_config R-1003-A 
+Jan 22 16:39:52.819 HYPERVISOR: exec_cmd: vm get_status R-1003-A 
+Jan 22 16:39:52.819 HYPERVISOR: exec_cmd: vm extract_config R-1003-A 
+Jan 22 16:39:52.863 HYPERVISOR: exec_cmd: vm delete R-1003-A 
+Jan 22 16:39:52.863 VM: VM R-1003-A destroyed.
+Jan 22 16:39:52.864 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 22 16:39:52.867 HYPERVISOR: Stopped.
+Jan 22 16:39:52.868 GENERAL: reset done.

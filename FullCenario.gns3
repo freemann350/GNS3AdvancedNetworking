@@ -219,7 +219,7 @@
                 "drawing_id": "6695e3d1-e093-4def-bb46-e5d7319806e1",
                 "locked": true,
                 "rotation": 0,
-                "svg": "<svg width=\"144\" height=\"80\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">AS #1002\n2221:2566:1:1002::/64\n130.0.102.0/24\nSTUB</text></svg>",
+                "svg": "<svg width=\"144\" height=\"80\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">AS #1002\n2221:2566:1:1002::/64\n130.0.102.0/24\nSTUB (area 102)</text></svg>",
                 "x": -586,
                 "y": -313,
                 "z": 2
@@ -228,9 +228,9 @@
                 "drawing_id": "b3ff2d34-b801-4e3f-974b-a5daa16ffd35",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"144\" height=\"80\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">AS #1003\n2221:2566:1:1003::/64\n130.0.103.0/24\nNSSA</text></svg>",
-                "x": 430,
-                "y": -361,
+                "svg": "<svg width=\"144\" height=\"80\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">AS #1003\n2221:2566:1:1003::/64\n130.0.103.0/24\nNSSA  (area 103)</text></svg>",
+                "x": 469,
+                "y": -340,
                 "z": 2
             },
             {
@@ -2007,8 +2007,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/0",
-                            "x": -6,
-                            "y": 29
+                            "x": -50,
+                            "y": 7
                         },
                         "node_id": "4118ecc7-b6c6-40fa-8f08-7c68785f04c3",
                         "port_number": 0

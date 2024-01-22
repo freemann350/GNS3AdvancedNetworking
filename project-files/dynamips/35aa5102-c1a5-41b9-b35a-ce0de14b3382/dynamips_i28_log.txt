@@ -1,0 +1,16 @@
+Jan 22 16:28:31.900 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 22 16:28:31.900 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35517.
+Jan 22 16:28:31.907 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 22 16:28:31.907 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/GNS3AdvancedNetworking/project-files/dynamips 
+Jan 22 16:28:31.907 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/GNS3AdvancedNetworking/project-files/dynamips
+Jan 22 16:28:31.907 HYPERVISOR: exec_cmd: ethsw create SW-1000 
+Jan 22 16:28:42.005 HYPERVISOR: exec_cmd: nio create_udp udp-e531edee-68d6-4494-8580-f4750b1d269a 10157 127.0.0.1 10156 
+Jan 22 16:28:42.005 HYPERVISOR: exec_cmd: ethsw add_nio SW-1000 udp-e531edee-68d6-4494-8580-f4750b1d269a 
+Jan 22 16:28:42.011 HYPERVISOR: exec_cmd: ethsw set_access_port SW-1000 udp-e531edee-68d6-4494-8580-f4750b1d269a 1 
+Jan 22 16:28:42.203 HYPERVISOR: exec_cmd: nio create_udp udp-9d49b82c-72ab-4032-ba16-37495e584213 10160 127.0.0.1 10161 
+Jan 22 16:28:42.203 HYPERVISOR: exec_cmd: ethsw add_nio SW-1000 udp-9d49b82c-72ab-4032-ba16-37495e584213 
+Jan 22 16:28:42.211 HYPERVISOR: exec_cmd: ethsw set_access_port SW-1000 udp-9d49b82c-72ab-4032-ba16-37495e584213 1 
+Jan 22 16:39:52.777 HYPERVISOR: exec_cmd: ethsw delete SW-1000 
+Jan 22 16:39:52.809 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 22 16:39:52.951 HYPERVISOR: Stopped.
+Jan 22 16:39:52.951 GENERAL: reset done.

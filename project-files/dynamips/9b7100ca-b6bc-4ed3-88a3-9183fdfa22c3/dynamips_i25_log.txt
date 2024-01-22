@@ -1,0 +1,33 @@
+Jan 22 16:40:04.027 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 22 16:40:04.027 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53129.
+Jan 22 16:40:04.035 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 22 16:40:04.035 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/GNS3AdvancedNetworking/project-files/dynamips 
+Jan 22 16:40:04.035 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/GNS3AdvancedNetworking/project-files/dynamips
+Jan 22 16:40:04.035 HYPERVISOR: exec_cmd: hypervisor working_dir /home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/GNS3AdvancedNetworking/project-files/dynamips/5fbe06df-1866-4ac6-b6ed-09538fc931b4 
+Jan 22 16:40:04.035 GENERAL: working_dir=/home/alex/Área de Trabalho/IPL/EI/3º Ano/A3S1/TAR/PL/GNS3/GNS3AdvancedNetworking/project-files/dynamips/5fbe06df-1866-4ac6-b6ed-09538fc931b4
+Jan 22 16:40:04.035 HYPERVISOR: exec_cmd: vm create R-1002-B 16 c7200 
+Jan 22 16:40:04.035 VM: VM R-1002-B created.
+Jan 22 16:40:04.036 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-1002-B 5039 
+Jan 22 16:40:04.036 HYPERVISOR: exec_cmd: c7200 get_mac_addr R-1002-B 
+Jan 22 16:40:04.036 HYPERVISOR: exec_cmd: vm get_status R-1002-B 
+Jan 22 16:40:04.036 HYPERVISOR: exec_cmd: vm slot_add_binding R-1002-B 0 0 C7200-IO-FE 
+Jan 22 16:40:04.037 HYPERVISOR: exec_cmd: vm set_disk0 R-1002-B 0 
+Jan 22 16:40:04.037 HYPERVISOR: exec_cmd: vm get_status R-1002-B 
+Jan 22 16:40:04.037 HYPERVISOR: exec_cmd: vm set_idle_pc R-1002-B 0x60189224 
+Jan 22 16:40:04.037 HYPERVISOR: exec_cmd: vm set_ios R-1002-B /home/alex/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M10.image 
+Jan 22 16:40:04.038 HYPERVISOR: exec_cmd: c7200 set_mac_addr R-1002-B ca10.2f70.0000 
+Jan 22 16:40:04.038 HYPERVISOR: exec_cmd: vm set_nvram R-1002-B 512 
+Jan 22 16:40:04.039 HYPERVISOR: exec_cmd: vm set_ram R-1002-B 512 
+Jan 22 16:40:04.039 HYPERVISOR: exec_cmd: vm get_status R-1002-B 
+Jan 22 16:40:04.039 HYPERVISOR: exec_cmd: vm slot_remove_binding R-1002-B 0 0 
+Jan 22 16:40:04.039 HYPERVISOR: exec_cmd: vm get_status R-1002-B 
+Jan 22 16:40:04.039 HYPERVISOR: exec_cmd: vm slot_add_binding R-1002-B 0 0 C7200-IO-2FE 
+Jan 22 16:40:04.040 HYPERVISOR: exec_cmd: vm get_status R-1002-B 
+Jan 22 16:40:04.040 HYPERVISOR: exec_cmd: vm slot_add_binding R-1002-B 1 0 PA-FE-TX 
+Jan 22 16:40:06.550 HYPERVISOR: exec_cmd: vm get_status R-1002-B 
+Jan 22 16:40:06.556 HYPERVISOR: exec_cmd: vm extract_config R-1002-B 
+Jan 22 16:40:06.558 HYPERVISOR: exec_cmd: vm delete R-1002-B 
+Jan 22 16:40:06.558 VM: VM R-1002-B destroyed.
+Jan 22 16:40:06.562 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 22 16:40:07.037 HYPERVISOR: Stopped.
+Jan 22 16:40:07.037 GENERAL: reset done.
